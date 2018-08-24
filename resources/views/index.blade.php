@@ -3,7 +3,7 @@
 @extends('src.app')
 
 @section('section')
-	{{csrf_field()}} 
+	@csrf
 	<example-component></example-component>
 
 
