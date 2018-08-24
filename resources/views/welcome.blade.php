@@ -81,7 +81,7 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-                <example-component></example-component>
+                <example-component>Hello</example-component>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
