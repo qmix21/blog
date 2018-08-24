@@ -1,3 +1,5 @@
+<div id="app">
+
 @extends('src.app')
 
 @section('section')
@@ -7,3 +9,4 @@
 
 
 @endsection
+</div>
