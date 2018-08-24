@@ -1,7 +1,8 @@
 @extends('src.app')
 
 @section('section')
-<example-component></example-component>
+	{{csrf_field()}} 
+	<example-component></example-component>
 
 
 
