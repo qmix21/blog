@@ -13904,10 +13904,18 @@ window.Vue = __webpack_require__(36);
  */
 
 Vue.component('example-component', __webpack_require__(39));
+Vue.component('todo-item', { props: ['todo'], template: '<li>{{todo.text}}</li>' });
 
 var app = new Vue({
   el: '#app'
 });
+
+var app7 = new Vue({
+  el: '#app2',
+  data: {
+    groceryList: [{ id: 0, text: 'Vegetables' }, { id: 1, text: 'Cheese' }, { id: 2, text: 'Watermelon' }]
+
+  } });
 
 /***/ }),
 /* 13 */
