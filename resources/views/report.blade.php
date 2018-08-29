@@ -34,7 +34,7 @@
     			@endforeach
     		</select>
     		<div class="divider"></div>
-    		<select style="display: inline-block;padding-left: 50px">
+    		<select style="display: inline-block;">
     			@foreach($dates as $date)
     			<option>{{ $date->date }}</option>
     			@endforeach
