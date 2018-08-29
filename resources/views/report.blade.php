@@ -28,12 +28,14 @@
     <div class="container">
     	<div class="col-sm-8">
     		<div class="divider"></div>
+    		<label>From:</label>
     		<select style="display: inline-block;">
     			@foreach($dates as $date)
     			<option>{{ $date->date }}</option>
     			@endforeach
     		</select>
     		<div class="divider"></div>
+    		<label>To:</label>
     		<select style="display: inline-block;">
     			@foreach($dates as $date)
     			<option>{{ $date->date }}</option>
