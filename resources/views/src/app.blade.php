@@ -44,7 +44,7 @@
 $(document).ready(function(){
 $("button").click(function(){
 	var myDiv = document.getElementById('div1');
-	console.log(myDiv);
+	console.log(myDiv.style.left);
 
 	
 	if(myDiv.clientLeft == '250px')
