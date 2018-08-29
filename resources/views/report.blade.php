@@ -27,6 +27,7 @@
     </div>
     <div class="container">
     	<div class="col-sm-8">
+    		<div class="divider"></div>
     		<select style="display: inline-block;">
     		</select>
     		<div class="divider"></div>
