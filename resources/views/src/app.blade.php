@@ -47,7 +47,7 @@ $("button").click(function(){
 	console.log(myDiv.style.left);
 
 	
-	if(myDiv.clientLeft == '250px')
+	if(myDiv.style.left == '250px')
 	{
 	$("#div1").animate({
 	left: '0px',
