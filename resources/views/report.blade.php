@@ -25,6 +25,19 @@
         <h1 class="cover-heading">Choose Between Two Dates to see Reports</h1>
       </main>
     </div>
+    <div class="container">
+    	<div class="row-sm-8">
+    		<div class="col-sm-8">
+    		<select>
+    		</select>
+    	</div>
+    	<div class="col-sm-8">
+    		<select>
+    			
+    		</select>
+    	</div>
+    	</div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript
