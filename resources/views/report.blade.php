@@ -29,7 +29,7 @@
     	<div class="col-sm-8">
     		<select style="display: inline-block;">
     		</select>
-    		<div class="divider"/>
+    		<div class="divider"></div>
     		<select style="display: inline-block;padding-left: 50px">
     		</select>
     	</div>
