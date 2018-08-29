@@ -17,3 +17,5 @@
 
 
 Route::get('/','BlogController@index');
+
+Route::get('/dev/report','ReportController@index');
