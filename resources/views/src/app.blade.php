@@ -44,6 +44,7 @@
 $(document).ready(function(){
 $("button").click(function(){
 	var myDiv = document.getElementById('div1');
+	console.log(myDiv.left);
 	if(myDiv.left == '250px')
 	{
 	$("div1").animate({
@@ -51,7 +52,7 @@ $("button").click(function(){
 	opacity: '0',
 	height: '250px',
 	width: '250px'
-	}
+	});
 	}
 	else
 	{
@@ -60,11 +61,9 @@ $("button").click(function(){
 	opacity: '0.5',
 	height: '150px',
 	width: '150px'
-	}
+	});
+}
 
-	
-
-});
 });
 });
 
