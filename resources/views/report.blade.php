@@ -48,7 +48,7 @@
 
   
 =======
-<script src="https://raw.githubusercontent.com/nnnick/Chart.js/master/dist/Chart.bundle.js"></script>
+<script src="https://cdnjs.ccloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
 
 <script>
 
