@@ -44,7 +44,7 @@
 $(document).ready(function(){
 $("button").click(function(){
 	var myDiv = document.getElementById('div1');
-	console.log(myDiv.left);
+	console.log(myDiv);
 	if(myDiv.left == '250px')
 	{
 	$("div1").animate({
