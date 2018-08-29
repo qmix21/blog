@@ -53,7 +53,7 @@ $("button").click(function(){
 	left: '0px',
 	opacity: '1',
 	height: '250px',
-	width: '250px'
+	width: '1250px'
 	});
 	}
 	else
