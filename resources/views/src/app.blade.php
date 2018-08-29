@@ -44,15 +44,12 @@
 $(document).ready(function(){
 $("button").click(function(){
 	var myDiv = document.getElementById('div1');
-	console.log(myDiv.style.left);
-
-	
 	if(myDiv.style.left == '250px')
 	{
 	$("#div1").animate({
 	left: '0px',
 	opacity: '1',
-	height: '350px',
+	height: '150px',
 	width: '1250px'
 	});
 	}
