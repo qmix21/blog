@@ -10482,6 +10482,12 @@ a.text-dark:focus {
 
 /* Padding below the footer and lighter body text */
 
+.divider {
+  width: 175px;
+  height: auto;
+  display: inline-block;
+}
+
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
