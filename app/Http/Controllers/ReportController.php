@@ -8,6 +8,6 @@ class ReportController extends Controller
 {
     public function index()
     {
-    	return UserReport::all();
+    	return view('report');
     }
 }
