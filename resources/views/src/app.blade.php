@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="{{asset("css/app.css")}}">
 
-<div>
+<div id="div1">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Carousel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,11 +43,25 @@
 <script>
 $(document).ready(function(){
 $("button").click(function(){
-$("div").animate({
+	var myDiv = document.getElementById('div1');
+	if(myDiv.left == '250px')
+	{
+	$("div1").animate({
+	left: '0px',
+	opacity: '0',
+	height: '250px',
+	width: '250px'
+	}
+	}
+	else
+	{
+	$("div1").animate({
 	left: '250px',
 	opacity: '0.5',
 	height: '150px',
 	width: '150px'
+	}
+
 	
 
 });
