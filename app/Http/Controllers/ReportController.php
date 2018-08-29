@@ -8,6 +8,7 @@ class ReportController extends Controller
 {
     public function index()
     {
-    	return view('report');
+    	$dates =UserReport::select('date')->distinct()->get();
+    	return view('report',compact($dates,'dates'));
     }
 }
