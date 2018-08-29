@@ -51,7 +51,7 @@ $("button").click(function(){
 	{
 	$("#div1").animate({
 	left: '0px',
-	opacity: '0',
+	opacity: '1',
 	height: '250px',
 	width: '250px'
 	});
