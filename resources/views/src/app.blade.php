@@ -49,7 +49,7 @@ $("button").click(function(){
 	
 	if(myDiv.clientLeft == '250px')
 	{
-	$("div1").animate({
+	$("#div1").animate({
 	left: '0px',
 	opacity: '0',
 	height: '250px',
@@ -58,7 +58,7 @@ $("button").click(function(){
 	}
 	else
 	{
-	$("div1").animate({
+	$("#div1").animate({
 	left: '250px',
 	opacity: '0.5',
 	height: '150px',
