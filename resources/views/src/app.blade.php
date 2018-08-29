@@ -52,7 +52,7 @@ $("button").click(function(){
 	$("#div1").animate({
 	left: '0px',
 	opacity: '1',
-	height: '550px',
+	height: '350px',
 	width: '1250px'
 	});
 	}
