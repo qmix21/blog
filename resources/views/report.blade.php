@@ -63,7 +63,7 @@ var endDate = new Date(strToDate);
 
 
 
-console.log(strToDate);
+console.log(endDate);
 //console.log(strToDate.toString()); 
 
 //Current Format is dd-mm-yy, however Date() does not take that format.
