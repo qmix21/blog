@@ -73,6 +73,11 @@ var endDate = new Date(arrToDate[2],arrToDate[1]-1,arrToDate[0]);
 //Current Format is dd-mm-yy, however Date() does not take that format.
 //	var year = getDates(new Date(fromDate.options[fromDate.selectedIndex].value),new Date(toDate.options[fromDate.selectedIndex].value));
 
+Date.prototype.addDays = function(days) {
+    var date = new Date(this.valueOf());
+    date.setDate(date.getDate() + days);
+    return date;
+    
 var year = getDates(startDate,endDate);
 console.log(year);
         //console.log(year);
@@ -146,16 +151,13 @@ console.log(year);
 
     });
 
-Date.prototype.addDays = function(days) {
-    var date = new Date(this.valueOf());
-    date.setDate(date.getDate() + days);
-    return date;
+
 }
     function getDates(startDate,stopDate)
     {
-
+    
 	    var dateArray = new Array();
-	    console.log(startDate);
+	    //console.log(startDate);
 	var currentDate = startDate;
 	while(currentDate <= stopDate)
 	{
