@@ -1,0 +1,1 @@
+[01-Sep-2018 04:17:10 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Testing\TestCase' not found in /home/qmix21/public_html/blog/tests/TestCase.php on line 7

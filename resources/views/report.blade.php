@@ -29,27 +29,43 @@
     	<div class="col-sm-8">
     		<div class="divider"></div>
     		<label>From:</label>
-    		<select style="display: inline-block;">
+    		<select style="display: inline-block;"id="sel1">
     			@foreach($dates as $date)
     			<option>{{ $date->date }}</option>
     			@endforeach
     		</select>
     		<div class="divider"></div>
     		<label>To:</label>
-    		<select style="display: inline-block;">
+		<select style="display: inline-block;"id="sel2">
     			@foreach($dates as $date)
     			<option>{{ $date->date }}</option>
     			@endforeach
     		</select>
     	</div>
     </div>
+<button onClick="ShowChart()">Show Chart</button>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 
 <script>
 
-    var year = ['2013','2014','2015', '2016'];
+function ShowChart()
+{
+var fromDate = document.getElementById("sel1");
+var strFromDate = fromDate.options[fromDate.selectedIndex].value;
+var startDate = new Date(strFromDate);
 
+
+//alert(fromDate.options[fromDate.selectedIndex].value);
+var toDate = document.getElementById("sel2");
+var strToDate = toDate.options[toDate.selectedIndex].value;
+var endDate = new Date(strToDate);
+
+
+console.log(strToDate.toString()); 
+//	var year = getDates(new Date(fromDate.options[fromDate.selectedIndex].value),new Date(toDate.options[fromDate.selectedIndex].value));
+
+        console.log(year);
     var data_click = <?php echo $date; ?>;
 
     var data_viewer = <?php echo $date; ?>;
@@ -79,8 +95,6 @@
 
     };
 
-
-    window.onload = function() {
 
         var ctx = document.getElementById("canvas").getContext("2d");
 
@@ -118,11 +132,28 @@
 
             }
 
-        });
 
 
-    };
+    });
 
+    function getDates(startDate,stopDate)
+    {
+
+	    var dateArray = new Array();
+	    console.log(startDate);
+	var currentDate = startDate;
+	while(currentDate <= stopDate)
+	{
+  		
+		dateArray.push(new Date(currentDate));
+		currentDate = currentDate.addDays(1);
+	}
+	return dateArray;
+
+
+
+    }
+}
 </script>
 
 

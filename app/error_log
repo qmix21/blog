@@ -1,0 +1,2 @@
+[31-Aug-2018 11:42:15 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Auth\User' not found in /home/qmix21/public_html/blog/app/User.php on line 8
+[31-Aug-2018 11:42:37 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/qmix21/public_html/blog/app/UserReport.php on line 7

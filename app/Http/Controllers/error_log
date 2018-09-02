@@ -1,0 +1,3 @@
+[31-Aug-2018 11:46:32 UTC] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/qmix21/public_html/blog/app/Http/Controllers/Controller.php on line 10
+[31-Aug-2018 11:46:48 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/qmix21/public_html/blog/app/Http/Controllers/BlogController.php on line 7
+[31-Aug-2018 11:47:06 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/qmix21/public_html/blog/app/Http/Controllers/ReportController.php on line 7

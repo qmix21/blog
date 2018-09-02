@@ -1,0 +1,4 @@
+[31-Aug-2018 11:48:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/qmix21/public_html/blog/app/Http/Controllers/Auth/ResetPasswordController.php on line 8
+[31-Aug-2018 11:48:38 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/qmix21/public_html/blog/app/Http/Controllers/Auth/RegisterController.php on line 11
+[31-Aug-2018 11:48:58 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/qmix21/public_html/blog/app/Http/Controllers/Auth/ForgotPasswordController.php on line 8
+[31-Aug-2018 11:49:18 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/qmix21/public_html/blog/app/Http/Controllers/Auth/LoginController.php on line 8

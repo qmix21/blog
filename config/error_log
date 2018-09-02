@@ -1,0 +1,48 @@
+[01-Sep-2018 04:29:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/mail.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/mail.php on line 19
+[01-Sep-2018 04:29:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/app.php on line 16
+[01-Sep-2018 04:29:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/qmix21/public_html/blog/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/view.php on line 17
+[01-Sep-2018 04:29:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/cache.php on line 18
+[01-Sep-2018 04:29:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/queue.php on line 16
+[01-Sep-2018 04:29:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/logging.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/logging.php on line 18
+[01-Sep-2018 04:29:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/session.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/session.php on line 19
+[01-Sep-2018 04:30:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/hashing.php on line 32
+[01-Sep-2018 04:30:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/database.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/database.php on line 16
+[01-Sep-2018 04:30:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/services.php on line 18
+[01-Sep-2018 04:30:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/filesystems.php on line 16
+[01-Sep-2018 04:30:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/qmix21/public_html/blog/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/config/broadcasting.php on line 18

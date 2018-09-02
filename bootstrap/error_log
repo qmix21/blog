@@ -1,0 +1,4 @@
+[01-Sep-2018 04:22:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/qmix21/public_html/blog/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/bootstrap/app.php on line 14

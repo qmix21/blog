@@ -1,0 +1,1 @@
+[31-Aug-2018 11:44:52 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Kernel' not found in /home/qmix21/public_html/blog/app/Http/Kernel.php on line 7

@@ -1,0 +1,1 @@
+[31-Aug-2018 11:45:00 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/qmix21/public_html/blog/app/Console/Kernel.php on line 8

@@ -1,0 +1,5 @@
+[31-Aug-2018 11:45:20 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/qmix21/public_html/blog/app/Providers/AppServiceProvider.php on line 7
+[31-Aug-2018 11:45:23 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\AuthServiceProvider' not found in /home/qmix21/public_html/blog/app/Providers/AuthServiceProvider.php on line 8
+[31-Aug-2018 11:45:29 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\RouteServiceProvider' not found in /home/qmix21/public_html/blog/app/Providers/RouteServiceProvider.php on line 8
+[31-Aug-2018 11:45:38 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\EventServiceProvider' not found in /home/qmix21/public_html/blog/app/Providers/EventServiceProvider.php on line 8
+[31-Aug-2018 11:45:42 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/qmix21/public_html/blog/app/Providers/BroadcastServiceProvider.php on line 8

@@ -1,0 +1,16 @@
+[01-Sep-2018 04:18:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/qmix21/public_html/blog/routes/web.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/routes/web.php on line 19
+[01-Sep-2018 04:18:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/qmix21/public_html/blog/routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/routes/api.php on line 16
+[01-Sep-2018 04:18:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/qmix21/public_html/blog/routes/console.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/routes/console.php on line 16
+[01-Sep-2018 04:18:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home/qmix21/public_html/blog/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/qmix21/public_html/blog/routes/channels.php on line 14

@@ -1,0 +1,1 @@
+[01-Sep-2018 04:21:00 UTC] PHP Fatal error:  Class 'Illuminate\Database\Seeder' not found in /home/qmix21/public_html/blog/database/seeds/DatabaseSeeder.php on line 5
