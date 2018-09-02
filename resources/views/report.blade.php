@@ -77,7 +77,7 @@ Date.prototype.addDays = function(days) {
     var date = new Date(this.valueOf());
     date.setDate(date.getDate() + days);
     return date;
-    
+
 var year = getDates(startDate,endDate);
 console.log(year);
         //console.log(year);
@@ -163,13 +163,20 @@ console.log(year);
 	{
   		
 		dateArray.push(new Date(currentDate));
-		currentDate = currentDate.addDays(1);
+        currentDate = addDays(currentDate,1);
+		//currentDate = currentDate.addDays(1);
 	}
 	return dateArray;
 
 
 
     }
+
+    function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
 }
 </script>
 
