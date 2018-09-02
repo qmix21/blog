@@ -62,7 +62,7 @@ var strToDate = toDate.options[toDate.selectedIndex].value;
 var arrToDate = strToDate.split('-');
 arrToDate[2] = "2018";
 var validToDate = arrToDate.join("/");
-var endDate = new Date(validTodate);
+var endDate = new Date(validToDate);
 
 
 
