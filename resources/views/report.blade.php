@@ -61,12 +61,11 @@ var toDate = document.getElementById("sel2");
 var strToDate = toDate.options[toDate.selectedIndex].value;
 var arrToDate = strToDate.split('-');
 arrToDate[2] = "2018";
-var validToDate = arrToDate.join("/");
-var endDate = new Date(validToDate);
+var endDate = new Date(arrToDate[2],arrToDate[1],arrToDate[0]);
 
 
 
-console.log(validToDate);
+console.log(endDate);
 //console.log(strToDate.toString()); 
 
 //Current Format is dd-mm-yy, however Date() does not take that format.
