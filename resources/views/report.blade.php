@@ -59,7 +59,10 @@ var startDate = new Date(strFromDate);
 //alert(fromDate.options[fromDate.selectedIndex].value);
 var toDate = document.getElementById("sel2");
 var strToDate = toDate.options[toDate.selectedIndex].value;
-var endDate = new Date(strToDate);
+var arrToDate = strToDate.split('-');
+arrToDate[2] = "2018";
+var validToDate = arrToDate.join("/");
+var endDate = new Date(validTodate);
 
 
 
