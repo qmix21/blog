@@ -67,12 +67,14 @@ var endDate = new Date(arrToDate[2],arrToDate[1]-1,arrToDate[0]);
 
 
 
-console.log(endDate);
+//console.log(endDate);
 //console.log(strToDate.toString()); 
 
 //Current Format is dd-mm-yy, however Date() does not take that format.
 //	var year = getDates(new Date(fromDate.options[fromDate.selectedIndex].value),new Date(toDate.options[fromDate.selectedIndex].value));
 
+var year = getDates(startDate,endDate);
+console.log(year);
         //console.log(year);
     var data_click = <?php echo $date; ?>;
 
