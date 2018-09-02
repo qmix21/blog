@@ -53,7 +53,7 @@ function ShowChart()
 {
 var fromDate = document.getElementById("sel1");
 var strFromDate = fromDate.options[fromDate.selectedIndex].value;
-var arrFromDate = strToDate.split('-');
+var arrFromDate = strFromDate.split('-');
 arrFromDate[2] = "2018";
 var startDate = new Date(arrFromDate[2],arrFromDate[1]-1,arrFromDate[0]);
 
