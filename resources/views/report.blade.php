@@ -190,7 +190,7 @@ function addDays(date, days) {
 
                 <div class="panel-body">
 
-                    <canvas id="canvas" height="280" width="600"></canvas>
+                    <canvas id="canvas" height="580" width="600"></canvas>
 
                 </div>
 
