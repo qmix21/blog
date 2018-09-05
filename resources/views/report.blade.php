@@ -79,10 +79,13 @@ var groupChart = new groupBarChart(barChartConfig);
 
 
         <div class="panel-heading">Dashboard</div>
+        <script>
+          window.addEventListener('resize', function (event) {
+            $("#chart").width(window.innerWidth * 0.9);
+            $("#chart").height(window.innerHeight);
+          });
+        <div id="chart"class="panel-body">
 
-        <div class="panel-body">
-
-            <canvas id="chart" height="380" width="800"></canvas>
 
         </div>
 
