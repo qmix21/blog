@@ -46,7 +46,7 @@
     </div>
     <button onClick="ShowChart()">Show Chart</button>
 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="{{asset('js/barChart.js')}}"></script>
     <script>
@@ -82,7 +82,7 @@ var groupChart = new groupBarChart(barChartConfig);
 
         <div class="panel-body">
 
-            <canvas id="canvas" height="380" width="800"></canvas>
+            <canvas id="chart" height="380" width="800"></canvas>
 
         </div>
 
