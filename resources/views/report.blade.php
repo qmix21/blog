@@ -85,7 +85,7 @@ var groupChart = new groupBarChart(barChartConfig);
             $("#chart").height(window.innerHeight);
           });
           </script>
-        <div id="chart"class="panel-body">
+        <div id="chart">
 
 
         </div>
