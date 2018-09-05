@@ -40,6 +40,110 @@
                                                                                                                </div>
                                                                                                               </div>
                                                                                                               <button onClick="ShowChart()"> Show Chart </button>
+                                                                                                              <script>
+                                                                                                              function ShowChart() {
+
+                                                                                                                  var fromDate = document.getElementById("sel1");
+                                                                                                                  var strFromDate = fromDate.options[fromDate.selectedIndex].value;
+                                                                                                                  var arrFromDate = strFromDate.split('-');
+                                                                                                                  arrFromDate[2] = "2018";
+                                                                                                                  var startDate = new Date(arrFromDate[2], arrFromDate[1] - 1, arrFromDate[0]);
+
+
+                                                                                                                  var toDate = document.getElementById("sel2");
+                                                                                                                  var strToDate = toDate.options[toDate.selectedIndex].value;
+                                                                                                                  var arrToDate = strToDate.split('-');
+                                                                                                                  arrToDate[2] = "2018";
+                                                                                                                  var endDate = new Date(arrToDate[2], arrToDate[1] - 1, arrToDate[0]);
+
+                                                                                                                  var dates = getDates(startDate, endDate);
+
+                                                                                                                  dates.forEach(function(element) {
+                                                                                                                      var day = element.getDate();
+                                                                                                                      var month = element.getMonth();
+                                                                                                                      var year = element.getFullYear().toString().slice(-2);
+
+                                                                                                                      var names = <?php foreach($names as $name)
+                                                                                                                      {
+                                                                                                                          $arr = [];
+                                                                                                                          array_push($arr, $name->name);
+                                                                                                                          return $arr;
+                                                                                                                      } ?> ;
+                                                                                                                      console.log(names);
+                                                                                                                  });
+                                                                                                                  var groupChartData = [{
+                                                                                                                      "2614": 8,
+                                                                                                                      "techs": 1
+                                                                                                                  }, {
+                                                                                                                      "2614": 7,
+                                                                                                                      "techs": 2
+                                                                                                                  }, {
+                                                                                                                      "2614": 4,
+                                                                                                                      "techs": 3
+                                                                                                                  }, {
+                                                                                                                      "2614": 19,
+                                                                                                                      "techs": 4
+                                                                                                                  }, {
+                                                                                                                      "2614": 3,
+                                                                                                                      "techs": 5
+                                                                                                                  }, {
+                                                                                                                      "2614": 6,
+                                                                                                                      "techs": 6
+                                                                                                                  }, {
+                                                                                                                      "2614": 7,
+                                                                                                                      "techs": 7
+                                                                                                                  }, {
+                                                                                                                      "2614": 13,
+                                                                                                                      "techs": 8
+                                                                                                                  }, {
+                                                                                                                      "2614": 1,
+                                                                                                                      "techs": 9
+                                                                                                                  }, {
+                                                                                                                      "2614": 8,
+                                                                                                                      "techs": 10
+                                                                                                                  }];
+                                                                                                                  var columnsInfo = {
+                                                                                                                      "2614": "Team A"
+                                                                                                                  };
+
+                                                                                                                  $("#chart").empty();
+                                                                                                                  var barChartConfig = {
+                                                                                                                      mainDiv: "#chart",
+                                                                                                                      colorRange: ["#2a98cd", "#df7247"],
+                                                                                                                      data: groupChartData,
+                                                                                                                      columnsInfo: columnsInfo,
+                                                                                                                      xAxis: "techs",
+                                                                                                                      yAxis: "interactions",
+                                                                                                                      label: {
+                                                                                                                          xAxis: "Techs",
+                                                                                                                          yAxis: "Interactions"
+                                                                                                                      },
+                                                                                                                      requireLegend: true
+                                                                                                                  };
+                                                                                                                  var groupChart = new groupBarChart(barChartConfig);
+                                                                                                              }
+
+
+                                                                                                          function getDates(startDate, stopDate) {
+
+                                                                                                              var dateArray = new Array();
+                                                                                                              //console.log(startDate);
+                                                                                                              var currentDate = startDate;
+                                                                                                              while (currentDate <= stopDate) {
+
+                                                                                                                  dateArray.push(new Date(currentDate));
+                                                                                                                  currentDate = addDays(currentDate, 1);
+                                                                                                                  //currentDate = currentDate.addDays(1);
+                                                                                                              }
+                                                                                                              return dateArray;
+
+                                                                                                          }
+
+                                                                                                          function addDays(date, days) {
+                                                                                                              var result = new Date(date);
+                                                                                                              result.setDate(result.getDate() + days);
+                                                                                                              return result;
+                                                                                                          } </script>
                                                                                                                <div class="container">
                                                                                                                             <div class="panel-heading"> Dashboard </div>
                                                                                                                              <script>
@@ -54,110 +158,7 @@
                                                                                                                                         </div>
                                                                                                                                        </div>
                                                                                                                                      </div>
-    <script>
-    function ShowChart() {
 
-        var fromDate = document.getElementById("sel1");
-        var strFromDate = fromDate.options[fromDate.selectedIndex].value;
-        var arrFromDate = strFromDate.split('-');
-        arrFromDate[2] = "2018";
-        var startDate = new Date(arrFromDate[2], arrFromDate[1] - 1, arrFromDate[0]);
-
-
-        var toDate = document.getElementById("sel2");
-        var strToDate = toDate.options[toDate.selectedIndex].value;
-        var arrToDate = strToDate.split('-');
-        arrToDate[2] = "2018";
-        var endDate = new Date(arrToDate[2], arrToDate[1] - 1, arrToDate[0]);
-
-        var dates = getDates(startDate, endDate);
-
-        dates.forEach(function(element) {
-            var day = element.getDate();
-            var month = element.getMonth();
-            var year = element.getFullYear().toString().slice(-2);
-
-            var names = <?php foreach($names as $name)
-            {
-                $arr = [];
-                array_push($arr, $name->name);
-                return $arr;
-            } ?> ;
-            console.log(names);
-        });
-        var groupChartData = [{
-            "2614": 8,
-            "techs": 1
-        }, {
-            "2614": 7,
-            "techs": 2
-        }, {
-            "2614": 4,
-            "techs": 3
-        }, {
-            "2614": 19,
-            "techs": 4
-        }, {
-            "2614": 3,
-            "techs": 5
-        }, {
-            "2614": 6,
-            "techs": 6
-        }, {
-            "2614": 7,
-            "techs": 7
-        }, {
-            "2614": 13,
-            "techs": 8
-        }, {
-            "2614": 1,
-            "techs": 9
-        }, {
-            "2614": 8,
-            "techs": 10
-        }];
-        var columnsInfo = {
-            "2614": "Team A"
-        };
-
-        $("#chart").empty();
-        var barChartConfig = {
-            mainDiv: "#chart",
-            colorRange: ["#2a98cd", "#df7247"],
-            data: groupChartData,
-            columnsInfo: columnsInfo,
-            xAxis: "techs",
-            yAxis: "interactions",
-            label: {
-                xAxis: "Techs",
-                yAxis: "Interactions"
-            },
-            requireLegend: true
-        };
-        var groupChart = new groupBarChart(barChartConfig);
-    }
-
-
-function getDates(startDate, stopDate) {
-
-    var dateArray = new Array();
-    //console.log(startDate);
-    var currentDate = startDate;
-    while (currentDate <= stopDate) {
-
-        dateArray.push(new Date(currentDate));
-        currentDate = addDays(currentDate, 1);
-        //currentDate = currentDate.addDays(1);
-    }
-    return dateArray;
-
-}
-
-function addDays(date, days) {
-    var result = new Date(date);
-    result.setDate(result.getDate() + days);
-    return result;
-} </script>
 <!--================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"
