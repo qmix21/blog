@@ -72,7 +72,7 @@ function ShowChart()
   dates.forEach(function(element){
     var day = element.getDay();
     var month = element.getMonth();
-    var year = element.getYear();
+    var year = element.getFullYear();
     console.log(year);
 
 });
