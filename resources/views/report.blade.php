@@ -77,7 +77,9 @@ function ShowChart()
 
     var names = <?php foreach($names as $name)
     {
-      echo $name->name;
+      $arr = [];
+      array_push($arr,$name->name);
+      return $arr;
     } ?>;
 console.log(names);
 });
@@ -117,6 +119,7 @@ console.log(names);
   var columnsInfo = {
       "2614": "Team A"
   };
+
 $("#chart").empty();
 var barChartConfig = {
  mainDiv: "#chart",
@@ -133,6 +136,7 @@ var barChartConfig = {
 };
 var groupChart = new groupBarChart(barChartConfig);
 }
+
 
 function getDates(startDate, stopDate) {
 
