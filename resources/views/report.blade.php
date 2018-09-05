@@ -74,7 +74,7 @@ css / app.css ")}}" rel="stylesheet">
             var names = <?php foreach($names as $name)
             {
                 $arr = [];
-                array_push($arr, $name - > name);
+                array_push($arr, $name->name);
                 return $arr;
             } ? > ;
             console.log(names);
