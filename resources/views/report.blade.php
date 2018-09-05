@@ -39,9 +39,9 @@
                                                                                                                  @endforeach </select>
                                                                                                                </div>
                                                                                                               </div>
-                                                                                                              <button onClick="ShowChart()"> Show Chart </button>
+                                                                                                              <button onclick="showChart()"> Show Chart </button>
                                                                                                               <script>
-                                                                                                              function ShowChart() {
+                                                                                                              function showChart() {
 
                                                                                                                   var fromDate = document.getElementById("sel1");
                                                                                                                   var strFromDate = fromDate.options[fromDate.selectedIndex].value;
