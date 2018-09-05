@@ -148,7 +148,7 @@
                                                                                                                  @endforeach </select>
                                                                                                                </div>
                                                                                                               </div>
-                                                                                                              <button onclick="ShowChart"> Show Chart </button>
+                                                                                                              <button onclick="ShowChart()"> Show Chart </button>
 
                                                                                                                <div class="container">
                                                                                                                             <div class="panel-heading"> Dashboard </div>
