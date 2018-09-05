@@ -81,7 +81,7 @@ var groupChart = new groupBarChart(barChartConfig);
         <div class="panel-heading">Dashboard</div>
         <script>
           window.addEventListener('resize', function (event) {
-            $("#chart").width(window.innerWidth * 0.9);
+            $("#chart").width(window.innerWidth * 1.9);
             $("#chart").height(window.innerHeight);
           });
           </script>
