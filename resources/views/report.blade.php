@@ -8,9 +8,8 @@
                         <meta name="author" content="">
                             <link rel="icon" href="../../../../favicon.ico">
 
-                                <title> Qmix21 Report < /title> <!-- Bootstrap core CSS -->
-                                        <link href="{{asset("
-css / app.css ")}}" rel="stylesheet">
+                                <title> Qmix21 Report </title> <!-- Bootstrap core CSS -->
+                                        <link href="{{asset("css/app.css ")}}" rel="stylesheet">
 
                                             <!-- Custom styles for this template -->
                                             <script src = "https://code.jquery.com/jquery-latest.min.js" ></script>
