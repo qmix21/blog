@@ -48,7 +48,7 @@
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src=asset{{'js/barChart.js'}}></script>
+    <script src="{{asset('js/barChart.js')}}"></script>
     <script>
 
 var groupChartData = [{ "2614": 8, "over": 1 }, { "2614": 7, "over": 2 }, { "2614": 4, "over": 3 }, { "2614": 19, "over": 4 }, { "2614": 3, "over": 5 }, { "2614": 6, "over": 6 }, { "2614": 7, "over": 7 }, { "2614": 13, "over": 8 }, { "2614": 1, "over": 9 }, { "2614": 8, "over": 10 }];
