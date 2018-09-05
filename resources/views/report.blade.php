@@ -39,7 +39,7 @@
                                                                                                                  @endforeach </select>
                                                                                                                </div>
                                                                                                               </div>
-                                                                                                              <button onclick="showChart()"> Show Chart </button>
+                                                                                                              <button onclick="ShowChart"> Show Chart </button>
                                                                                                               <script>
                                                                                                               function ShowChart() {
 
