@@ -73,7 +73,7 @@ function ShowChart()
     var day = element.getDay();
     var month = element.getMonth();
     var year = element.getYear();
-    console.log(day);
+    console.log(month);
 
 });
 
