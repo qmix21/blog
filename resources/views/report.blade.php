@@ -49,6 +49,27 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="{{asset('js/barChart.js')}}"></script>
+
+
+
+    <div class="container">
+
+
+        <div class="panel-heading">Dashboard</div>
+        <script>
+          window.addEventListener('resize', function (event) {
+            $("#chart").width(window.innerWidth * 0.9);
+            $("#chart").height(window.innerHeight);
+          });
+          </script>
+        <div id="chart">
+
+
+        </div>
+
+    </div>
+
+    </div>
     <script>
 
 
@@ -161,26 +182,6 @@ function getDates(startDate, stopDate) {
             return result;
           }
     </script>
-
-
-    <div class="container">
-
-
-        <div class="panel-heading">Dashboard</div>
-        <script>
-          window.addEventListener('resize', function (event) {
-            $("#chart").width(window.innerWidth * 0.9);
-            $("#chart").height(window.innerHeight);
-          });
-          </script>
-        <div id="chart">
-
-
-        </div>
-
-    </div>
-
-    </div>
     <!--================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
