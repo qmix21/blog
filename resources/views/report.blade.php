@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -13,189 +14,187 @@
     <link href="{{asset("css/app.css")}}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-      </head>
+</head>
 
-  <body class="text-center">
-          <h3>Qmix21 Reporting Tool</h3>
+<body class="text-center">
+    <h3>Qmix21 Reporting Tool</h3>
 
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      </header>
+        </header>
 
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Choose Between Two Dates to see Reports</h1>
-      </main>
+        <main role="main" class="inner cover">
+            <h1 class="cover-heading">Choose Between Two Dates to see Reports</h1>
+        </main>
     </div>
     <div class="container">
-    	<div class="col-sm-8">
-    		<div class="divider"></div>
-    		<label>From:</label>
-    		<select style="display: inline-block;"id="sel1">
+        <div class="col-sm-8">
+            <div class="divider"></div>
+            <label>From:</label>
+            <select style="display: inline-block;"id="sel1">
     			@foreach($dates as $date)
     			<option>{{ $date->date }}</option>
     			@endforeach
     		</select>
-    		<div class="divider"></div>
-    		<label>To:</label>
-		<select style="display: inline-block;"id="sel2">
+            <div class="divider"></div>
+            <label>To:</label>
+            <select style="display: inline-block;"id="sel2">
     			@foreach($dates as $date)
     			<option>{{ $date->date }}</option>
     			@endforeach
     		</select>
-    	</div>
+        </div>
     </div>
-<button onClick="ShowChart()">Show Chart</button>
+    <button onClick="ShowChart()">Show Chart</button>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 
-<script>
-
-function ShowChart()
-{
-var fromDate = document.getElementById("sel1");
-var strFromDate = fromDate.options[fromDate.selectedIndex].value;
-var arrFromDate = strFromDate.split('-');
-arrFromDate[2] = "2018";
-var startDate = new Date(arrFromDate[2],arrFromDate[1]-1,arrFromDate[0]);
+    <script>
+        function ShowChart() {
+            var fromDate = document.getElementById("sel1");
+            var strFromDate = fromDate.options[fromDate.selectedIndex].value;
+            var arrFromDate = strFromDate.split('-');
+            arrFromDate[2] = "2018";
+            var startDate = new Date(arrFromDate[2], arrFromDate[1] - 1, arrFromDate[0]);
 
 
-//alert(fromDate.options[fromDate.selectedIndex].value);
-var toDate = document.getElementById("sel2");
-var strToDate = toDate.options[toDate.selectedIndex].value;
-var arrToDate = strToDate.split('-');
-arrToDate[2] = "2018";
-var endDate = new Date(arrToDate[2],arrToDate[1]-1,arrToDate[0]);
+            //alert(fromDate.options[fromDate.selectedIndex].value);
+            var toDate = document.getElementById("sel2");
+            var strToDate = toDate.options[toDate.selectedIndex].value;
+            var arrToDate = strToDate.split('-');
+            arrToDate[2] = "2018";
+            var endDate = new Date(arrToDate[2], arrToDate[1] - 1, arrToDate[0]);
 
 
 
-//console.log(endDate);
-//console.log(strToDate.toString()); 
+            //console.log(endDate);
+            //console.log(strToDate.toString());
 
-//Current Format is dd-mm-yy, however Date() does not take that format.
-//	var year = getDates(new Date(fromDate.options[fromDate.selectedIndex].value),new Date(toDate.options[fromDate.selectedIndex].value));
-
-
-var year = getDates(startDate,endDate);
-console.log(year);
-        //console.log(year);
-    var data_click = <?php {{UserReport::find(1)->get();}} ?>;
-
-    var data_viewer = <?php echo $date; ?>;
+            //Current Format is dd-mm-yy, however Date() does not take that format.
+            //	var year = getDates(new Date(fromDate.options[fromDate.selectedIndex].value),new Date(toDate.options[fromDate.selectedIndex].value));
 
 
-    var barChartData = {
+            var year = getDates(startDate, endDate);
+            console.log(year);
+            //console.log(year);
+            var data_click = <?php {{UserReport::find(1)->get();}} ?>;
 
-        labels: year,
-
-        datasets: [{
-
-            label: 'Click',
-
-            backgroundColor: "rgba(220,220,220,0.5)",
-
-            data: data_click
-
-        }, {
-
-            label: 'View',
-
-            backgroundColor: "rgba(151,187,205,0.5)",
-
-            data: data_viewer
-
-        }]
-
-    };
+            var data_viewer = <?php echo $date; ?>;
 
 
-        var ctx = document.getElementById("canvas").getContext("2d");
+            var barChartData = {
 
-        window.myBar = new Chart(ctx, {
+                labels: year,
 
-            type: 'bar',
+                datasets: [{
 
-            data: barChartData,
+                    label: 'Click',
 
-            options: {
+                    backgroundColor: "rgba(220,220,220,0.5)",
 
-                elements: {
+                    data: data_click
 
-                    rectangle: {
+                }, {
 
-                        borderWidth: 2,
+                    label: 'View',
 
-                        borderColor: 'rgb(0, 255, 0)',
+                    backgroundColor: "rgba(151,187,205,0.5)",
 
-                        borderSkipped: 'bottom'
+                    data: data_viewer
+
+                }]
+
+            };
+
+
+            var ctx = document.getElementById("canvas").getContext("2d");
+
+            window.myBar = new Chart(ctx, {
+
+                type: 'bar',
+
+                data: barChartData,
+
+                options: {
+
+                    elements: {
+
+                        rectangle: {
+
+                            borderWidth: 2,
+
+                            borderColor: 'rgb(0, 255, 0)',
+
+                            borderSkipped: 'bottom'
+
+                        }
+
+                    },
+
+                    responsive: true,
+
+                    title: {
+
+                        display: true,
+
+                        text: 'Yearly Website Visitor'
 
                     }
 
-                },
-
-                responsive: true,
-
-                title: {
-
-                    display: true,
-
-                    text: 'Yearly Website Visitor'
-
                 }
 
+
+
+            });
+
+
+        }
+
+        function getDates(startDate, stopDate) {
+
+            var dateArray = new Array();
+            //console.log(startDate);
+            var currentDate = startDate;
+            while (currentDate <= stopDate) {
+
+                dateArray.push(new Date(currentDate));
+                currentDate = addDays(currentDate, 1);
+                //currentDate = currentDate.addDays(1);
             }
+            return dateArray;
 
 
 
-    });
+        }
+
+        function addDays(date, days) {
+            var result = new Date(date);
+            result.setDate(result.getDate() + days);
+            return result;
+        }
+    </script>
 
 
-}
-    function getDates(startDate,stopDate)
-    {
-    
-	    var dateArray = new Array();
-	    //console.log(startDate);
-	var currentDate = startDate;
-	while(currentDate <= stopDate)
-	{
-  		
-		dateArray.push(new Date(currentDate));
-        currentDate = addDays(currentDate,1);
-		//currentDate = currentDate.addDays(1);
-	}
-	return dateArray;
+    <div class="container">
 
 
+        <div class="panel-heading">Dashboard</div>
 
-    }
+        <div class="panel-body">
 
-function addDays(date, days) {
-  var result = new Date(date);
-  result.setDate(result.getDate() + days);
-  return result;
-}
-
-
-</script>
-
-
-<div class="container">
-
-
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-
-                    <canvas id="canvas" height="380" width="800"></canvas>
+            <canvas id="canvas" height="380" width="800"></canvas>
 
         </div>
 
     </div>
 
-</div>
+    </div>
     <!--================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
 
-  </body>
+</body>
+
 </html>

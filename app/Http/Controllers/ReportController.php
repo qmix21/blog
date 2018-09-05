@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\UserReport;
+
 class ReportController extends Controller
 {
     public function index()
     {
-    	$dates =UserReport::select('date')->distinct()->get();
-    	return view('report',compact($dates,'dates'));
+        $dates = UserReport::select('date')->distinct()->get();
+        $users = UserReport::all();
+        return view('report', compact($dates, 'dates'),compact($users,'users'));
     }
 }
