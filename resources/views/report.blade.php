@@ -75,7 +75,7 @@ function ShowChart()
     var month = element.getMonth();
     var year = element.getFullYear().toString().slice(-2);
 
-    var names = <?php echo $users->name;?>;
+    var names = <?php echo {{$names->name}} ?>;
 console.log(names);
 });
 
