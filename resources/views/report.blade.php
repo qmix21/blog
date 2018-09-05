@@ -41,12 +41,13 @@
                                                                                                               </div>
                                                                                                               <button onClick="ShowChart()"> Show Chart </button>
                                                                                                                <div class="container">
-                                                                                                                            <div class="panel-heading"> Dashboard </div>\
+                                                                                                                            <div class="panel-heading"> Dashboard </div>
                                                                                                                              <script>
                                                                                                                                     window.addEventListener('resize', function(event) {
                                                                                                                                     $("#chart").width(window.innerWidth * 0.9);
                                                                                                                                     $("#chart").height(window.innerHeight);
-                                                                                                                                    }); </script>
+                                                                                                                                    });
+                                                                                                                                  </script>
                                                                                                                                     <div id="chart">
 
 
@@ -54,8 +55,6 @@
                                                                                                                                        </div>
                                                                                                                                      </div>
     <script>
-
-
     function ShowChart() {
 
         var fromDate = document.getElementById("sel1");
@@ -86,8 +85,6 @@
             } ?> ;
             console.log(names);
         });
-
-
         var groupChartData = [{
             "2614": 8,
             "techs": 1
@@ -165,13 +162,10 @@ function addDays(date, days) {
 <!-- Placed at the end of the document so the pages load faster -->
 <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"
 integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-crossorigin = "anonymous" > < /script>
-< script >
-    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>') <
-    /script>
+crossorigin = "anonymous"> </script>
+<script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>') </script>
 
-    <
-    /body>
+    </body>
 
-    <
-    /html>
+    </html>
