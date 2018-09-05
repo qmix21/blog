@@ -70,10 +70,10 @@ function ShowChart()
 
   var dates = getDates(startDate, endDate);
   dates.forEach(function(element){
-    var day = element.getDay();
+    var day = element.getDate();
     var month = element.getMonth();
     var year = element.getFullYear();
-    console.log(year);
+    console.log(day);
 
 });
 
