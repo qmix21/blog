@@ -41,6 +41,30 @@
                                                                                                               </div>
                                                                                                               <button onclick="ShowChart"> Show Chart </button>
                                                                                                               <script>
+                                                                                                              function addDays(date, days) {
+                                                                                                                  var result = new Date(date);
+                                                                                                                  result.setDate(result.getDate() + days);
+                                                                                                                  return result;
+                                                                                                              }
+                                                                                                              
+                                                                                                              function getDates(startDate, stopDate) {
+
+                                                                                                                  var dateArray = new Array();
+                                                                                                                  //console.log(startDate);
+                                                                                                                  var currentDate = startDate;
+                                                                                                                  while (currentDate <= stopDate) {
+
+                                                                                                                      dateArray.push(new Date(currentDate));
+                                                                                                                      currentDate = addDays(currentDate, 1);
+                                                                                                                      //currentDate = currentDate.addDays(1);
+                                                                                                                  }
+                                                                                                                  return dateArray;
+
+                                                                                                              }
+
+
+
+
                                                                                                               function ShowChart() {
 
                                                                                                                   var fromDate = document.getElementById("sel1");
@@ -124,26 +148,7 @@
                                                                                                               }
 
 
-                                                                                                          function getDates(startDate, stopDate) {
-
-                                                                                                              var dateArray = new Array();
-                                                                                                              //console.log(startDate);
-                                                                                                              var currentDate = startDate;
-                                                                                                              while (currentDate <= stopDate) {
-
-                                                                                                                  dateArray.push(new Date(currentDate));
-                                                                                                                  currentDate = addDays(currentDate, 1);
-                                                                                                                  //currentDate = currentDate.addDays(1);
-                                                                                                              }
-                                                                                                              return dateArray;
-
-                                                                                                          }
-
-                                                                                                          function addDays(date, days) {
-                                                                                                              var result = new Date(date);
-                                                                                                              result.setDate(result.getDate() + days);
-                                                                                                              return result;
-                                                                                                          } </script>
+                                                                                               </script>
                                                                                                                <div class="container">
                                                                                                                             <div class="panel-heading"> Dashboard </div>
                                                                                                                              <script>
