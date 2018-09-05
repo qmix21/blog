@@ -76,7 +76,7 @@ css / app.css ")}}" rel="stylesheet">
                 $arr = [];
                 array_push($arr, $name->name);
                 return $arr;
-            } ? > ;
+            } ?> ;
             console.log(names);
         });
 
