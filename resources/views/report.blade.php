@@ -19,11 +19,11 @@
 <body class="text-center">
     <h3>Qmix21 Reporting Tool</h3>
 
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <div class="ctechs-container d-flex h-100 p-3 mx-auto flex-column">
         </header>
 
-        <main role="main" class="inner cover">
-            <h1 class="cover-heading">Choose Between Two Dates to see Reports</h1>
+        <main role="main" class="inner ctechs">
+            <h1 class="ctechs-heading">Choose Between Two Dates to see Reports</h1>
         </main>
     </div>
     <div class="container">
@@ -54,7 +54,7 @@
 
 function ShowChart()
 {
-  var groupChartData = [{ "2614": 8, "over": 1 }, { "2614": 7, "over": 2 }, { "2614": 4, "over": 3 }, { "2614": 19, "over": 4 }, { "2614": 3, "over": 5 }, { "2614": 6, "over": 6 }, { "2614": 7, "over": 7 }, { "2614": 13, "over": 8 }, { "2614": 1, "over": 9 }, { "2614": 8, "over": 10 }];
+  var groupChartData = [{ "2614": 8, "techs": 1 }, { "2614": 7, "techs": 2 }, { "2614": 4, "techs": 3 }, { "2614": 19, "techs": 4 }, { "2614": 3, "techs": 5 }, { "2614": 6, "techs": 6 }, { "2614": 7, "techs": 7 }, { "2614": 13, "techs": 8 }, { "2614": 1, "techs": 9 }, { "2614": 8, "techs": 10 }];
   var columnsInfo = { "2614": "Team A" };
 $("#chart").empty();
 var barChartConfig = {
@@ -62,11 +62,11 @@ var barChartConfig = {
  colorRange: ["#2a98cd", "#df7247"],
  data: groupChartData,
  columnsInfo: columnsInfo,
- xAxis: "over",
- yAxis: "runs",
+ xAxis: "techs",
+ yAxis: "interactions",
  label: {
-   xAxis: "Over",
-   yAxis: "Runs"
+   xAxis: "Techs",
+   yAxis: "Interactions"
  },
  requireLegend: true
 };
