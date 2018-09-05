@@ -99,7 +99,7 @@ function ShowChart()
       array_push($arr,$name->name);
       return $arr;
     } ?>;
-console.log(names);
+//console.log(names);
 });
 
 
