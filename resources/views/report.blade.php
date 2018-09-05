@@ -51,10 +51,11 @@
     <script src="{{asset('js/barChart.js')}}"></script>
     <script>
 
-var groupChartData = [{ "2614": 8, "over": 1 }, { "2614": 7, "over": 2 }, { "2614": 4, "over": 3 }, { "2614": 19, "over": 4 }, { "2614": 3, "over": 5 }, { "2614": 6, "over": 6 }, { "2614": 7, "over": 7 }, { "2614": 13, "over": 8 }, { "2614": 1, "over": 9 }, { "2614": 8, "over": 10 }];
-var columnsInfo = { "2614": "Team A" };
+
 function ShowChart()
 {
+  var groupChartData = [{ "2614": 8, "over": 1 }, { "2614": 7, "over": 2 }, { "2614": 4, "over": 3 }, { "2614": 19, "over": 4 }, { "2614": 3, "over": 5 }, { "2614": 6, "over": 6 }, { "2614": 7, "over": 7 }, { "2614": 13, "over": 8 }, { "2614": 1, "over": 9 }, { "2614": 8, "over": 10 }];
+  var columnsInfo = { "2614": "Team A" };
 $("#chart").empty();
 var barChartConfig = {
  mainDiv: "#chart",
