@@ -18,7 +18,7 @@ class ReportController extends Controller
 
           }
           else {
-            $names.push($name);
+            array_push($names,$name);
           }
         }
         return view('report', compact($dates, 'dates'),compact($names,'names'));
