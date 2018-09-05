@@ -46,131 +46,31 @@
     </div>
     <button onClick="ShowChart()">Show Chart</button>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="barChart.js"></script>
     <script>
-        function ShowChart() {
-            var fromDate = document.getElementById("sel1");
-            var strFromDate = fromDate.options[fromDate.selectedIndex].value;
-            var arrFromDate = strFromDate.split('-');
-            arrFromDate[2] = "2018";
-            var startDate = new Date(arrFromDate[2], arrFromDate[1] - 1, arrFromDate[0]);
 
-
-            //alert(fromDate.options[fromDate.selectedIndex].value);
-            var toDate = document.getElementById("sel2");
-            var strToDate = toDate.options[toDate.selectedIndex].value;
-            var arrToDate = strToDate.split('-');
-            arrToDate[2] = "2018";
-            var endDate = new Date(arrToDate[2], arrToDate[1] - 1, arrToDate[0]);
-
-
-
-            //console.log(endDate);
-            //console.log(strToDate.toString());
-
-            //Current Format is dd-mm-yy, however Date() does not take that format.
-            //	var year = getDates(new Date(fromDate.options[fromDate.selectedIndex].value),new Date(toDate.options[fromDate.selectedIndex].value));
-
-
-            var year = getDates(startDate, endDate);
-            console.log(year);
-            //console.log(year);
-            var data_click = <?php echo $date; ?>;
-
-            var data_viewer = <?php echo $date; ?>;
-
-
-            var barChartData = {
-
-                labels: year,
-
-                datasets: [{
-
-                    label: 'Click',
-
-                    backgroundColor: "rgba(220,220,220,0.5)",
-
-                    data: data_click
-
-                }, {
-
-                    label: 'View',
-
-                    backgroundColor: "rgba(151,187,205,0.5)",
-
-                    data: data_viewer
-
-                }]
-
-            };
-
-
-            var ctx = document.getElementById("canvas").getContext("2d");
-
-            window.myBar = new Chart(ctx, {
-
-                type: 'bar',
-
-                data: barChartData,
-
-                options: {
-
-                    elements: {
-
-                        rectangle: {
-
-                            borderWidth: 2,
-
-                            borderColor: 'rgb(0, 255, 0)',
-
-                            borderSkipped: 'bottom'
-
-                        }
-
-                    },
-
-                    responsive: true,
-
-                    title: {
-
-                        display: true,
-
-                        text: 'Yearly Website Visitor'
-
-                    }
-
-                }
-
-
-
-            });
-
-
-        }
-
-        function getDates(startDate, stopDate) {
-
-            var dateArray = new Array();
-            //console.log(startDate);
-            var currentDate = startDate;
-            while (currentDate <= stopDate) {
-
-                dateArray.push(new Date(currentDate));
-                currentDate = addDays(currentDate, 1);
-                //currentDate = currentDate.addDays(1);
-            }
-            return dateArray;
-
-
-
-        }
-
-        function addDays(date, days) {
-            var result = new Date(date);
-            result.setDate(result.getDate() + days);
-            return result;
-        }
+var groupChartData = [{ "2614": 8, "over": 1 }, { "2614": 7, "over": 2 }, { "2614": 4, "over": 3 }, { "2614": 19, "over": 4 }, { "2614": 3, "over": 5 }, { "2614": 6, "over": 6 }, { "2614": 7, "over": 7 }, { "2614": 13, "over": 8 }, { "2614": 1, "over": 9 }, { "2614": 8, "over": 10 }];
+var columnsInfo = { "2614": "Team A" };
+function ShowChart()
+{
+$("#chart").empty();
+var barChartConfig = {
+ mainDiv: "#chart",
+ colorRange: ["#2a98cd", "#df7247"],
+ data: groupChartData,
+ columnsInfo: columnsInfo,
+ xAxis: "over",
+ yAxis: "runs",
+ label: {
+   xAxis: "Over",
+   yAxis: "Runs"
+ },
+ requireLegend: true
+};
+var groupChart = new groupBarChart(barChartConfig);
+}
     </script>
 
 
