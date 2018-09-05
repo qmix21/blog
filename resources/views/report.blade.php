@@ -76,7 +76,7 @@
             var year = getDates(startDate, endDate);
             console.log(year);
             //console.log(year);
-            var data_click = <?php {{UserReport::find(1)->get();}} ?>;
+            var data_click = <?php echo $date; ?>;
 
             var data_viewer = <?php echo $date; ?>;
 
