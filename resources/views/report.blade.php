@@ -41,7 +41,7 @@
                                                                                                               </div>
                                                                                                               <button onclick="showChart()"> Show Chart </button>
                                                                                                               <script>
-                                                                                                              function showChart() {
+                                                                                                              function ShowChart() {
 
                                                                                                                   var fromDate = document.getElementById("sel1");
                                                                                                                   var strFromDate = fromDate.options[fromDate.selectedIndex].value;
