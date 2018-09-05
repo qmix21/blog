@@ -69,7 +69,12 @@ function ShowChart()
   var endDate = new Date(arrToDate[2], arrToDate[1] - 1, arrToDate[0]);
 
   var dates = getDates(startDate, endDate);
-  console.log(dates);
+  dates.forEach(function(element){
+    console.log(element);
+
+});
+
+
   var groupChartData = [{
       "2614": 8,
       "techs": 1
