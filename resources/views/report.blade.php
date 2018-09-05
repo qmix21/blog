@@ -64,13 +64,13 @@
                                                                 var month = element.getMonth();
                                                                 var year = element.getFullYear().toString().slice(-2);
 
-                                                                var names = <?php foreach($names as $name)
+                                                                //var names = #<?php #foreach($names as $name)
                                                                 {
-                                                                    $arr = [];
-                                                                    array_push($arr, $name->name);
-                                                                    return $arr;
-                                                                } ?> ;
-                                                                console.log(names);
+                                                              //      $arr = [];
+                                                              //      array_push($arr, $name->name);
+                                                              //      return $arr;
+                                                            } ?> ;
+                                                              //  console.log(names);
                                                             });
                                                             var groupChartData = [{
                                                                 "2614": 8,
