@@ -14,6 +14,9 @@
     <link href="{{asset("css/app.css")}}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="{{asset('js/barChart.js')}}"></script>
 </head>
 
 <body class="text-center">
@@ -46,13 +49,7 @@
     </div>
     <button onClick="ShowChart()">Show Chart</button>
 
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="{{asset('js/barChart.js')}}"></script>
-
-
-
-    <div class="container">
+      <div class="container">
 
 
         <div class="panel-heading">Dashboard</div>
