@@ -70,7 +70,8 @@ function ShowChart()
 
   var dates = getDates(startDate, endDate);
   dates.forEach(function(element){
-    console.log(element);
+    var temp = element.split("T");
+    console.log(temp);
 
 });
 
