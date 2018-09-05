@@ -69,12 +69,14 @@ function ShowChart()
   var endDate = new Date(arrToDate[2], arrToDate[1] - 1, arrToDate[0]);
 
   var dates = getDates(startDate, endDate);
+
   dates.forEach(function(element){
     var day = element.getDate();
     var month = element.getMonth();
     var year = element.getFullYear().toString().slice(-2);
-    console.log(year);
 
+    var names = <?php @foreach($name as $names) echo $name->name; @endforeach?>;
+console.log(names);
 });
 
 
