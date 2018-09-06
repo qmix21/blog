@@ -59,22 +59,25 @@
 
                                                             var dates = getDates(startDate, endDate);
 
+                                                            var names = <?php
+                                                            $arr = [];
+                                                            foreach ($names as $name) {
+                                                                array_push($arr, $name->name);
+                                                            }
+                                                        $js_arr = json_encode($arr);
+                                                        echo $js_arr;?>;
+
                                                             dates.forEach(function(element) {
                                                                 var day = element.getDate();
                                                                 var month = element.getMonth();
                                                                 var year = element.getFullYear().toString().slice(-2);
 
 
-                                                                var names = <?php
-                                                                $arr = [];
-                                                                foreach ($names as $name) {
-                                                                    array_push($arr, $name->name);
-                                                                }
-                                                            $js_arr = json_encode($arr);
-                                                            echo $js_arr;?>;
 
-                                                               console.log(names);
+
                                                             });
+                                                            console.log(names);
+
                                                             var groupChartData = [{
                                                                 "2614": 8,
                                                                 "techs": 1
