@@ -69,7 +69,7 @@
                                                                     $arr = [];
                                                                     array_push($arr, $name->name);
                                                                     $js_arr = json_encode($arr);
-                                                                    echo "console.log(" . $arr . ");\n";
+                                                                    echo "console.log(" . $js_arr . ");\n";
                                                             } ?>];
                                                               //  console.log(names);
                                                             });
