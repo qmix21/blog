@@ -74,7 +74,7 @@
                                                                 var year = element.getFullYear().toString().slice(-2);
                                                                 var complete_Date = day + month + year;
 
-                                                                var users = <?php json_encode($users->where('complete_Date','=','date')->get());?>;
+                                                                var users = <?php json_encode($users);?>;
                                                             });
 
                                                             console.log(names);
