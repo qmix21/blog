@@ -72,7 +72,7 @@
                                                             }
                                                             $js_arr = json_encode($arr);
                                                             echo $js_arr; ?>];
-                                                              //  console.log(names);
+                                                               console.log(names);
                                                             });
                                                             var groupChartData = [{
                                                                 "2614": 8,
