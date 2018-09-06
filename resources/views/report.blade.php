@@ -71,7 +71,7 @@
 
                                                             }
                                                             $js_arr = json_encode($arr);
-                                                            echo "console.log(" . $js_arr . ");\n"; ?>];
+                                                            echo $js_arr; ?>];
                                                               //  console.log(names);
                                                             });
                                                             var groupChartData = [{
