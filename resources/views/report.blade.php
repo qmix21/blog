@@ -63,15 +63,16 @@
                                                                 var day = element.getDate();
                                                                 var month = element.getMonth();
                                                                 var year = element.getFullYear().toString().slice(-2);
+
+
+                                                                var names = [<?php
                                                                 $arr = [];
-
-                                                                var names = [<?php foreach($names as $name)
-                                                                {
+                                                                foreach ($names as $name) {
                                                                     array_push($arr, $name->name);
-
-                                                            }
+                                                                }
                                                             $js_arr = json_encode($arr);
-                                                            echo $js_arr; ?>];
+                                                            echo $js_arr;?>];
+];
                                                                console.log(names);
                                                             });
                                                             var groupChartData = [{
