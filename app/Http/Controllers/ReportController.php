@@ -11,6 +11,7 @@ class ReportController extends Controller
     {
         $dates = UserReport::select('date')->distinct()->get();
         $distNames = UserReport::select('name')->distinct()->get();
+        $users = UserReport::all();
         $names = [];
         foreach($distNames as $name)
         {
@@ -21,6 +22,6 @@ class ReportController extends Controller
             array_push($names,$name);
           }
         }
-        return view('report', compact($dates, 'dates'),compact($names,'names'));
+        return view('report', compact($dates, 'dates'),compact($names,'names'),compact($users,'users'));
     }
 }
