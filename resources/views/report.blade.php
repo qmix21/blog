@@ -63,10 +63,10 @@
                                                                 var day = element.getDate();
                                                                 var month = element.getMonth();
                                                                 var year = element.getFullYear().toString().slice(-2);
+                                                                $arr = [];
 
                                                                 var names = [<?php foreach($names as $name)
                                                                 {
-                                                                    $arr = [];
                                                                     array_push($arr, $name->name);
 
                                                             }
