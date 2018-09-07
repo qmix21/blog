@@ -137,7 +137,7 @@
                                                                 },
                                                                 requireLegend: true
                                                             };
-                                                            var groupChart = new groupBarChart(barChartConfig);
+                                                          //  var groupChart = new groupBarChart(barChartConfig);
                                                         }
 
 
