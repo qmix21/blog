@@ -86,6 +86,7 @@
                                                               groupChartData.push(data);
 
                                                             });
+                                                            console.log(groupChartData);
                                                           //  var groupChartData = [
                                                             //  {
                                                               //  "2614": 8,
