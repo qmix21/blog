@@ -81,7 +81,7 @@
                                                             console.log(names);
 
                                                             names.forEach(function(element){
-                                                              groupChartData.push("2614":8,"techs":element.toString());
+                                                              groupChartData.push("2614":8,"techs":element.toString()));
 
                                                             });
                                                           //  var groupChartData = [
