@@ -157,7 +157,7 @@
                                                                                                                </div>
                                                                                                               </div>
                                                                                                               <div class="container">
-                                                                                                              <button onclick="ShowChart()"> Show Chart </button>
+                                                                                                              <button onclick="ShowChart()" style="padding-left:50px"> Show Chart </button>
                                                                                                             </div>
 
                                                                                                                <div class="container">
