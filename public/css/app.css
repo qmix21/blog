@@ -10483,7 +10483,7 @@ a.text-dark:focus {
 /* Padding below the footer and lighter body text */
 
 .divider {
-  width: 175px;
+  width: 150px;
   height: auto;
   display: inline-block;
 }
@@ -10582,4 +10582,3 @@ body {
     margin-top: 7rem;
   }
 }
-

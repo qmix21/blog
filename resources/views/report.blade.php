@@ -43,6 +43,7 @@
 
 
                                                         function ShowChart() {
+                                                          //Get Date from option 1 and put it into Date object
 
                                                             var fromDate = document.getElementById("sel1");
                                                             var strFromDate = fromDate.options[fromDate.selectedIndex].value;
@@ -50,7 +51,7 @@
                                                             arrFromDate[2] = "2018";
                                                             var startDate = new Date(arrFromDate[2], arrFromDate[1] - 1, arrFromDate[0]);
 
-
+                                                            //Get Date from option 2 and put it into Date object
                                                             var toDate = document.getElementById("sel2");
                                                             var strToDate = toDate.options[toDate.selectedIndex].value;
                                                             var arrToDate = strToDate.split('-');
@@ -74,7 +75,7 @@
                                                                 var year = element.getFullYear().toString().slice(-2);
                                                                 var complete_Date = day + month + year;
 
-                                                      
+
                                                             });
 
                                                             console.log(names);
