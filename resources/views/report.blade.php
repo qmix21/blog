@@ -80,37 +80,42 @@
 
                                                             console.log(names);
 
-                                                            var groupChartData = [{
-                                                                "2614": 8,
-                                                                "techs": 1
-                                                            }, {
-                                                                "2614": 7,
-                                                                "techs": 2
-                                                            }, {
-                                                                "2614": 4,
-                                                                "techs": 3
-                                                            }, {
-                                                                "2614": 19,
-                                                                "techs": 4
-                                                            }, {
-                                                                "2614": 3,
-                                                                "techs": 5
-                                                            }, {
-                                                                "2614": 6,
-                                                                "techs": 6
-                                                            }, {
-                                                                "2614": 7,
-                                                                "techs": 7
-                                                            }, {
-                                                                "2614": 13,
-                                                                "techs": 8
-                                                            }, {
-                                                                "2614": 1,
-                                                                "techs": 9
-                                                            }, {
-                                                                "2614": 8,
-                                                                "techs": 10
-                                                            }];
+                                                            names.forEach(function(element)){
+                                                              groupChartData.push("2614":8,"techs":element);
+
+                                                            }
+                                                          //  var groupChartData = [
+                                                            //  {
+                                                              //  "2614": 8,
+                                                                //"techs": 1
+                                                            //}, {
+                                                              //  "2614": 7,
+                                                                //"techs": 2
+                                                            //}, {
+                                                            //    "2614": 4,
+                                                            //    "techs": 3
+                                                            //}, {
+                                                              //  "2614": 19,
+                                                                //"techs": 4
+                                                            //}, {
+                                                              //  "2614": 3,
+                                                                //"techs": 5
+                                                            //}, {
+                                                              //  "2614": 6,
+                                                                //"techs": 6
+                                                            //}, {
+                                                            //    "2614": 7,
+                                                            //    "techs": 7
+                                                          //}, {
+                                                            //    "2614": 13,
+                                                            //    "techs": 8
+                                                            //}, {
+                                                            //    "2614": 1,
+                                                            //    "techs": 9
+                                                            //}, {
+                                                            //    "2614": 8,
+                                                            //    "techs": 10
+                                                          }//];
                                                             var columnsInfo = {
                                                                 "2614": "Team A"
                                                             };
@@ -157,7 +162,7 @@
                                                                                                                </div>
                                                                                                               </div>
                                                                                                               <div class="container">
-                                                                                                              <button onclick="ShowChart()" style="padding-left:50px"> Show Chart </button>
+                                                                                                              <button onclick="ShowChart()"> Show Chart </button>
                                                                                                             </div>
 
                                                                                                                <div class="container">
