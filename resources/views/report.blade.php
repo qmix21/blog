@@ -127,7 +127,7 @@
                                                             var barChartConfig = {
                                                                 mainDiv: "#chart",
                                                                 colorRange: ["#2a98cd", "#df7247"],
-                                                                data: groupChartData,
+                                                              //  data: groupChartData,
                                                                 columnsInfo: columnsInfo,
                                                                 xAxis: "techs",
                                                                 yAxis: "interactions",
