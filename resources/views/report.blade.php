@@ -80,10 +80,10 @@
 
                                                             console.log(names);
 
-                                                            names.forEach(function(element)){
+                                                            names.forEach(function(element){
                                                               groupChartData.push("2614":8,"techs":element);
 
-                                                            };
+                                                            });
                                                           //  var groupChartData = [
                                                             //  {
                                                               //  "2614": 8,
