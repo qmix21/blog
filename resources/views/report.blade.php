@@ -84,6 +84,7 @@
                                                               var data = {"2614":8,"techs":element};
 
                                                               groupChartData.push(data);
+                                                              console.log(groupChartData);
 
                                                             });
                                                             console.log(groupChartData);
@@ -127,7 +128,7 @@
                                                             var barChartConfig = {
                                                                 mainDiv: "#chart",
                                                                 colorRange: ["#2a98cd", "#df7247"],
-                                                              //  data: groupChartData,
+                                                                data: groupChartData,
                                                                 columnsInfo: columnsInfo,
                                                                 xAxis: "techs",
                                                                 yAxis: "interactions",
@@ -137,7 +138,7 @@
                                                                 },
                                                                 requireLegend: true
                                                             };
-                                                          //  var groupChart = new groupBarChart(barChartConfig);
+                                                            var groupChart = new groupBarChart(barChartConfig);
                                                         }
 
 
