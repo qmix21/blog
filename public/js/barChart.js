@@ -226,7 +226,7 @@ function groupBarChart(config) {
             return "#efefef"
           })
           .style("font-size", function (d) {
-            return 6000;
+            return 10;
           })
           .style("font-family", function (d) {
             return "arial";
