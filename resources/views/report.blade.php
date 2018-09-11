@@ -82,7 +82,6 @@
 
                                                             var groupChartData = [];
                                                             var userData = [];
-                                                              var counter = 0;
                                                             dates.forEach(function(element) {
 
 
@@ -106,30 +105,12 @@
                                                                     if(element.date == complete_Date)
                                                                     {
                                                                     //Foreach
-                                                                      if(counter==0)
-                                                                      {
+
                                                                         data = {'name':element.name,"interactions":element.perhour};
                                                                         console.log(data);
                                                                         userData.push(data);
-                                                                      }
-                                                                      else {
-                                                                        userData.forEach(function(ele2)
-                                                                        {
-                                                                          console.log(ele2.name);
-                                                                            if(ele2.name == element.name)
-                                                                            {
-                                                                                ele2.interactions = element.perhour + ele2.interactions;
-                                                                                //console.log(ele2.interact);
-                                                                              }
-                                                                              else
-                                                                              {
-                                                                                //data = {'name':element.name,"interactions":element.perhour};
-                                                                                //userData.push(data);
-                                                                              }
 
-                                                                          });
-                                                                          }
-                                                                      }
+                                                                    }
                                                                     else {
 
                                                                     //  console.log(complete_Date);
@@ -139,10 +120,10 @@
 
                                                                 });
 
-                                                                counter++;
+
                                                             });
 
-                                                            //console.log(userData);
+                                                            console.log(userData);
                                                           //  console.log(users);
 
                                                             names.forEach(function(element){
