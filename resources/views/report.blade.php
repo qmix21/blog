@@ -156,7 +156,9 @@
                                                               }
                                                               //console.log(userGroupData);
 
+
                                                             userGroupData.forEach(function(element){
+                                                              console.log(userGroupData.name);
                                                               var data = {"2614":element.interactions,"techs":element.name};
 
                                                               groupChartData.push(data);
