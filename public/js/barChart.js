@@ -224,7 +224,6 @@ function groupBarChart(config) {
             });
           })
           .append("text")
-          .attr("transform","rotate(90deg)")
           .attr("fill", function (d) {
             return "#efefef"
           })
@@ -253,7 +252,9 @@ function groupBarChart(config) {
           .attr("y", function (d, i) {
             var dims = helpers.getDimensions(pie.cssPrefix + "tooltip" + d.index);
             return -(dims.h / 2) + 1;
-          });
+          })
+          .attr("transform","rotate(90deg)");
+
       },
 
       showTooltip: function (pie, index) {
