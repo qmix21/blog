@@ -68,7 +68,8 @@
                                                         $js_arr = json_encode($arr);
                                                         echo $js_arr;?>;
 
-                                                        var users = <?php $userArr = [];
+                                                        var users = <?php
+                                                            $userArr = [];
                                                             foreach ($users as $user){
                                                               array_push($userArr, $user);
                                                             }
