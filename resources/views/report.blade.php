@@ -108,12 +108,17 @@
                                                                   {
                                                                     if(ele2.name == element.name)
                                                                     {
-                                                                      console.log(ele2);
+                                                                      ele2.interactions = element.perhour + ele2.interactions;
+                                                                    }
+                                                                    else {
+                                                                      {
+                                                                        data = {'name':element.name,"interactions":element.perhour};
+                                                                        userData.push(data);
+                                                                      }
                                                                     }
 
                                                                   });
-                                                                    data = {'name':element.name,"interactions":element.perhour};
-                                                                    userData.push(data);
+
 
 
                                                                     }
@@ -129,6 +134,7 @@
 
                                                             });
 
+                                                            console.log(userData);
                                                           //  console.log(users);
 
                                                             names.forEach(function(element){
