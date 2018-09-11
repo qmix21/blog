@@ -86,7 +86,16 @@
                                                                 var complete_Date = day + month + year;
 
                                                                 users.forEach(function(element){
-                                                                  console.log(element.name);
+                                                                //  console.log(element.name)
+                                                                  if(preg_match('/\\d/', element.name) > 0){
+
+                                                                  }
+                                                                  else {
+                                                                    if(element.date == complete_Date)
+                                                                    {
+                                                                      console.log(element);
+                                                                    }
+                                                                  }
 
                                                                 });
 
