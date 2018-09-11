@@ -63,7 +63,7 @@
                                                             var names = <?php
                                                             $arr = [];
                                                             foreach ($names as $name) {
-                                          
+
                                                                 array_push($arr, $name->name);
                                                             }
                                                         $js_arr = json_encode($arr);
@@ -71,8 +71,8 @@
 
                                                         var users = <?php
                                                             $userArr = [];
-                                                            foreach ($users as $user){
-                                                              array_push($userArr, $user);
+                                                            foreach ($techs as $tech){
+                                                              array_push($userArr, $tech);
                                                             }
                                                             $js_usr = json_encode($userArr);
                                                             echo $js_usr;
