@@ -130,10 +130,21 @@
                                                           {
                                                             if(userGroupData.length == 0)
                                                             {
-                                                              console.log(element);
+                                                              userGroupData.push(element);
                                                             }
                                                             else {
-                                                              console.log(1);
+                                                              userGroupData.forEach(function(el)
+                                                            {
+                                                              if(el.name == element.name)
+                                                              {
+                                                                el.interactions = el.interactions + element.interactions;
+                                                                break;
+                                                              }
+                                                              else {
+                                                                userGroupData.push(element);
+                                                                break;
+                                                              }
+                                                            });
                                                             }
                                                           });
 
