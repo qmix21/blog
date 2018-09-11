@@ -139,7 +139,7 @@
                                                                 counter++;
                                                             });
 
-                                                          //  console.log(userData);
+                                                            console.log(userData);
                                                           //  console.log(users);
 
                                                             names.forEach(function(element){
