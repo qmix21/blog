@@ -108,6 +108,9 @@
 
 
                                                                     //Foreach
+                                                                    data = {'name':element.name,"interactions":element.perhour};
+                                                                    if(userData)
+                                                                    {
                                                                       userData.forEach(function(ele2)
                                                                       {
                                                                           if(ele2.name == element.name)
@@ -117,11 +120,19 @@
                                                                           }
                                                                           else
                                                                           {
-                                                                            data = {'name':element.name,"interactions":element.perhour};
-                                                                            userData.push(data);
+
                                                                           }
 
                                                                     });
+                                                                    }
+                                                                    else
+                                                                      {
+                                                                        userData.push(data);
+
+                                                                      }
+
+
+
                                                                   //console.log(userData);
                                                                     }
                                                                     else {
