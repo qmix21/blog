@@ -90,9 +90,6 @@ function groupBarChart(config) {
         .attr("transform", function (d) {
           return "translate(" + x0(d[xAxis]) + ",0)";
         })
-        .attr("transform",function(d){
-          return "rotate(90)";
-        });
 
       var rect = element.selectAll("rect")
         .data(function (d, i) {
@@ -116,7 +113,8 @@ function groupBarChart(config) {
         })
         .attr("fill", function (d) {
           return z(d.key);
-        });
+        })
+        .attr("transform","rotate(-90)");
       //CBT:add tooltips
       var self = {};
       self.svg = svg;
