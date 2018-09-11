@@ -191,10 +191,11 @@ function groupBarChart(config) {
           .selectAll("g")
           .data(pie.data)
           .enter().append("g")
+          .attr("transform","rotate(90deg)")
           .attr("class", function (d, i) {
             return pie.cssPrefix + "tooltips" + "_" + i
           });
-          .attr("transform","rotate(90deg)")
+
 
         tooltips = element.selectAll("g")
           .data(function (d, i) {
