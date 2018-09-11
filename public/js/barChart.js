@@ -158,7 +158,7 @@ function groupBarChart(config) {
         .attr("fill", "#000")
         .attr("font-weight", "bold")
         .attr("text-anchor", "start")
-        .text(label.xAxis);
+        //.text(label.xAxis);
 
       g.append("g")
         .attr("class", "axis")
@@ -235,7 +235,7 @@ function groupBarChart(config) {
             return "#efefef"
           })
           .style("font-size", function (d) {
-            return 990;
+            return 10;
           })
           .style("font-family", function (d) {
             return "arial";
