@@ -105,39 +105,28 @@
                                                                     if(element.date == complete_Date)
                                                                     {
                                                                     //Foreach
-                                                                    if(counter==0)
-                                                                    {
-                                                                      data = {'name':element.name,"interactions":element.perhour};
-                                                                      userData.push(data);
-                                                                    }
-                                                                    else {
-                                                                      userData.forEach(function(ele2)
+                                                                      if(counter==0)
                                                                       {
-                                                                          if(ele2.name == element.name)
-                                                                          {
-                                                                              ele2.interactions = element.perhour + ele2.interactions;
-                                                                              console.log(ele2);
+                                                                        data = {'name':element.name,"interactions":element.perhour};
+                                                                        userData.push(data);
+                                                                      }
+                                                                      else {
+                                                                        userData.forEach(function(ele2)
+                                                                        {
+                                                                            if(ele2.name == element.name)
+                                                                            {
+                                                                                ele2.interactions = element.perhour + ele2.interactions;
+                                                                                console.log(ele2);
+                                                                              }
+                                                                              else
+                                                                              {
+                                                                                data = {'name':element.name,"interactions":element.perhour};
+                                                                                userData.push(data);
+                                                                              }
+
+                                                                          });
                                                                           }
-                                                                          else
-                                                                          {
-                                                                            data = {'name':element.name,"interactions":element.perhour};
-                                                                            userData.push(data);
-                                                                          }
-
-                                                                      });
-                                                                    }
-
-
-                                                                    //console.log(data);
-
-
-
-                                                                  }
-
-
-
-                                                                  //console.log(userData);
-                                                                    }
+                                                                      }
                                                                     else {
 
                                                                     //  console.log(complete_Date);
