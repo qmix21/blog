@@ -166,7 +166,7 @@ function groupBarChart(config) {
         .attr("fill", "#000")
         .attr("transform", "rotate(-90)")
         .attr("font-weight", "bold")
-        .attr("text-anchor", "start")
+        //.attr("text-anchor", "start")
         .text(label.yAxis);
     }
     var helpers = {
