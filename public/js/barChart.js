@@ -231,6 +231,10 @@ function groupBarChart(config) {
           .style("font-family", function (d) {
             return "arial";
           })
+          .style("transform",function (d)
+        {
+          return "rotate(90deg)";
+        })
           .text(function (d, i) {
             var caption = "Runs:{runs}";
             return barTooltip.replacePlaceholders(pie, caption, i, {
