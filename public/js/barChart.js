@@ -83,13 +83,13 @@ function groupBarChart(config) {
         });
       })]).nice();
 
-    //  var element = g.append("g")
-      //  .selectAll("g")
-        //.data(data)
-        //.enter().append("g")
-        //.attr("transform", function (d) {
-        //  return "translate(" + x0(d[xAxis]) + ",0)";
-        //});
+      var element = g.append("g")
+        .selectAll("g")
+        .data(data)
+        .enter().append("g")
+        .attr("transform", function (d) {
+          return "translate(" + x0(d[xAxis]) + ",0)";
+        });
 
       var rect = element.selectAll("rect")
         .data(function (d, i) {
