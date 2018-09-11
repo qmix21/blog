@@ -103,12 +103,9 @@
                                                                 //console.log(element.date);
                                                                     if(element.date == complete_Date)
                                                                     {
-                                                                    //  console.log(element);
-
-
-
                                                                     //Foreach
                                                                     data = {'name':element.name,"interactions":element.perhour};
+                                                                    console.log(data);
                                                                     if(userData)
                                                                     {
                                                                       userData.forEach(function(ele2)
