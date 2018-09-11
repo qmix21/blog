@@ -274,7 +274,8 @@ function groupBarChart(config) {
           .duration(fadeInSpeed)
           .style("opacity", function () {
             return 1;
-          });
+          })
+          .attr("transform","rotate(-90)");
 
         barTooltip.moveTooltip(pie);
       },
