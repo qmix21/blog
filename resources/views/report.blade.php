@@ -90,12 +90,16 @@
                                                                 users.forEach(function(element){
                                                                 //  console.log(element.name)
                                                                   if(isNumeric(element.name)){
-
+                                                                    console.log(element.name);
                                                                   }
                                                                   else {
                                                                     if(element.date == complete_Date)
                                                                     {
                                                                       console.log(element);
+                                                                    }
+                                                                    else {
+
+                                                                      console.log(complete_Date);
                                                                     }
                                                                   }
 
