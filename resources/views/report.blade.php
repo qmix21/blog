@@ -132,9 +132,9 @@
                                                                   var duplicate = false;
                                                                   var xarr = 0;
                                                                   var iarr =0;
-                                                                  for(x =0;x<userGroupData.length-1;i++)
+                                                                  for(x =0;x<userGroupData.length-1;x++)
                                                                   {
-                                                                    if(userGroupData[x].name==userData[i].name)
+                                                                    if(userGroupData[x].name == userData[i].name)
                                                                     {
                                                                       duplicate = true;
                                                                       xarr = x;
