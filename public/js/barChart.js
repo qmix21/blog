@@ -153,7 +153,7 @@ function groupBarChart(config) {
         .append("text")
         .attr("x", width / 2)
         .attr("y", margin.bottom * 0.9)
-        .attr("transform","rotate(90)")
+        //.attr("transform","rotate(90)")
         .attr("dx", "0.32em")
         .attr("fill", "#000")
         .attr("font-weight", "bold")
@@ -167,7 +167,7 @@ function groupBarChart(config) {
         .attr("x", 0)
         .attr("y", 6)//y(y.ticks().pop()) + 0.5)
         .attr("dy", "0.71em")
-        .attr("fill", "#888")
+        .attr("fill", "#000")
         .attr("transform", "rotate(-90)")
         .attr("font-weight", "bold")
         //.attr("text-anchor", "start")
@@ -195,6 +195,7 @@ function groupBarChart(config) {
           .selectAll("g")
           .data(pie.data)
           .enter().append("g")
+          .attr("transform","rotate(-90)")
 
           .attr("class", function (d, i) {
             return pie.cssPrefix + "tooltips" + "_" + i
