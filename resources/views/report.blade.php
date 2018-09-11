@@ -115,9 +115,9 @@
                                                                         data = {'name':element.name,"interactions":element.perhour};
                                                                         userData.push(data);
                                                                       }
-                                                                    }
+                                                                    });
 
-                                                                  }));
+                                                                  });
                                                                 }
                                                                   console.log(userData);
 
