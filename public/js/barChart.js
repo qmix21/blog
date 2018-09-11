@@ -219,6 +219,8 @@ function groupBarChart(config) {
           .attr("rx", 2)
           .attr("ry", 2)
           .attr("x", -2)
+          .attr("transform","rotate(-90)")
+
           .attr("opacity", 0.71)
           .style("fill", "#000000");
 
