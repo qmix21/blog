@@ -120,8 +120,8 @@
                                                                               }
                                                                               else
                                                                               {
-                                                                                data = {'name':element.name,"interactions":element.perhour};
-                                                                                userData.push(data);
+                                                                                //data = {'name':element.name,"interactions":element.perhour};
+                                                                                //userData.push(data);
                                                                               }
 
                                                                           });
