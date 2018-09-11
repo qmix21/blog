@@ -164,7 +164,7 @@ function groupBarChart(config) {
         .attr("y", 6)//y(y.ticks().pop()) + 0.5)
         .attr("dy", "0.71em")
         .attr("fill", "#000")
-        .attr("transform","rotate(90deg)")
+        .attr("transform", "rotate(-90)")
         .attr("font-weight", "bold")
         //.attr("text-anchor", "start")
         .text(label.yAxis);
@@ -194,6 +194,7 @@ function groupBarChart(config) {
           .attr("class", function (d, i) {
             return pie.cssPrefix + "tooltips" + "_" + i
           });
+          .attr("transform","rotate(90deg)")
 
         tooltips = element.selectAll("g")
           .data(function (d, i) {
