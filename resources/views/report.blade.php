@@ -129,15 +129,32 @@
 
                                                               for(i = 0; i<userData.length;i++)
                                                               {
-                                                                  if(userGroupData[i]==element.name)
+                                                                  var duplicate = false;
+                                                                  var xarr = 0;
+                                                                  var iarr =0;
+                                                                  for(x =0;x<userGroupData.length;i++)
                                                                   {
-                                                                    console.log(userGroupData[i]);
+                                                                    if(userGroupData[x].name==userData[i].name)
+                                                                    {
+                                                                      duplicate = true;
+                                                                      xarr = x;
+                                                                      iarr = i;
+                                                                      break;
+                                                                      }
+                                                                    else {
+
+                                                                    }
+                                                                  }
+                                                                  if(duplicate)
+                                                                  {
+                                                                    userGroupData[xarr].interactions = userGroupData[xarr].interactions + userData[iarr].interactions;
                                                                   }
                                                                   else {
-                                                                    console.log("No Duplicates");
+                                                                    userGroupData.push(userData[i]);
                                                                   }
-                                                              }
 
+                                                              }
+                                                              console.log(userGroupData);
 
                                                             names.forEach(function(element){
                                                               var data = {"2614":8,"techs":element};
