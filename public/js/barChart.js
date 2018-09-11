@@ -86,6 +86,7 @@ function groupBarChart(config) {
       var element = g.append("g")
         .selectAll("g")
         .data(data)
+        console.log(data);
         .enter().append("g")
         .attr("transform", function (d) {
           return "translate(" + x0(d[xAxis]) + ",0)";
@@ -279,8 +280,7 @@ function groupBarChart(config) {
             var x = mouseCoords[0] + 4 + 2;
             var y = mouseCoords[1] - (2 * 4) - 2;
             return "translate(" + x + "," + y + ")";
-          })
-          .attr("transform","rotate(90deg)");
+          });
 
       },
 
