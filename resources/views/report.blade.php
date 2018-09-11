@@ -126,13 +126,7 @@
 
                                                             //console.log(userData);
                                                           //  console.log(users);
-                                                          userData.forEach(function (element)
-                                                          {
-                                                            if(userGroupData.length == 0)
-                                                            {
-                                                              userGroupData.push(element);
-                                                            }
-                                                            else {
+
                                                               for(i = 0; i<userData.length;i++)
                                                               {
                                                                   if(userGroupData[i]==element.name)
@@ -143,8 +137,7 @@
                                                                     console.log("No Duplicates");
                                                                   }
                                                               }
-                                                            }
-                                                          });
+
 
                                                             names.forEach(function(element){
                                                               var data = {"2614":8,"techs":element};
