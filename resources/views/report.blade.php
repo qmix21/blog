@@ -116,7 +116,7 @@
                                                                             if(ele2.name == element.name)
                                                                             {
                                                                                 ele2.interactions = element.perhour + ele2.interactions;
-                                                                                console.log(ele2);
+                                                                                console.log(element.perhour);
                                                                               }
                                                                               else
                                                                               {
