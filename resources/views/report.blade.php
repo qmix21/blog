@@ -83,7 +83,12 @@
                                                             var groupChartData = [];
                                                             dates.forEach(function(element) {
                                                                 var day = element.getDate();
+
                                                                 var month = element.getMonth();
+                                                                if(month != 10 || month != 11 || month != 12)
+                                                                {
+                                                                  month = '0'+month;
+                                                                }
                                                                 var year = element.getFullYear().toString().slice(-2);
                                                                 var complete_Date = day + '-' + month + '-'+ year;
                                                                 console.log(complete_Date);
