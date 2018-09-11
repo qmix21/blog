@@ -127,12 +127,12 @@
                                                             //console.log(userData);
                                                           //  console.log(users);
 
-                                                              for(i = 0; i<userData.length;i++)
+                                                              for(i = 0; i<userData.length-1;i++)
                                                               {
                                                                   var duplicate = false;
                                                                   var xarr = 0;
                                                                   var iarr =0;
-                                                                  for(x =0;x<userGroupData.length;i++)
+                                                                  for(x =0;x<userGroupData.length-1;i++)
                                                                   {
                                                                     if(userGroupData[x].name==userData[i].name)
                                                                     {
