@@ -64,7 +64,8 @@ function groupBarChart(config) {
         .paddingInner(0.1);
 
       var x1 = d3.scaleBand()
-        .padding(0.05);
+        .padding(0.05)
+        .transform([rotate,90]);
 
       var y = d3.scaleLinear()
         .rangeRound([height, 0]);
@@ -114,7 +115,7 @@ function groupBarChart(config) {
         .attr("fill", function (d) {
           return z(d.key);
         })
-        .attr("transform","rotate(-90)");
+
       //CBT:add tooltips
       var self = {};
       self.svg = svg;
