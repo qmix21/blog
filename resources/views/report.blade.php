@@ -41,7 +41,9 @@
 
 
 
-
+                                                        function isNumeric(n) {
+                                                          return !isNaN(parseFloat(n)) && isFinite(n);
+                                                        }
                                                         function ShowChart() {
                                                           //Get Date from option 1 and put it into Date object
 
@@ -87,7 +89,7 @@
 
                                                                 users.forEach(function(element){
                                                                 //  console.log(element.name)
-                                                                  if(preg_match('/\\d/', element.name) > 0){
+                                                                  if(isNumeric(element.name)){
 
                                                                   }
                                                                   else {
