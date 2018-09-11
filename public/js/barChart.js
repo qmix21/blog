@@ -274,7 +274,7 @@ function groupBarChart(config) {
           .transition()
           .duration(fadeInSpeed)
           .style("opacity", function () {
-            return 1;
+            return 0.5;
           })
           .attr("transform","rotate(-90)");
 
