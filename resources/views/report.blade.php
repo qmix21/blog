@@ -98,7 +98,7 @@
 
                                                                 users.forEach(function(element){
                                                                 //  console.log(element.name)
-                                                                var matches = users.name.match(/\d+/g);
+                                                                var matches = element.name.match(/\d+/g);
                                                                   if(matches!=null){
                                                                   //  console.log(element.name);
                                                                   }
@@ -160,7 +160,7 @@
 
                                                             userGroupData.forEach(function(element){
                                                               console.log(element.name);
-                                                              
+
                                                               var data = {"2614":element.interactions,"techs":element.name};
 
                                                               groupChartData.push(data);
