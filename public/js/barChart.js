@@ -205,7 +205,6 @@ function groupBarChart(config) {
           })
           .enter()
           .append("g")
-          .attr("transform","rotate(90deg)")
           .attr("class", pie.cssPrefix + "tooltip")
           .attr("id", function (d, i) {
             return pie.cssPrefix + "tooltip" + d.index;
@@ -225,6 +224,7 @@ function groupBarChart(config) {
             });
           })
           .append("text")
+          .attr("transform","rotate(90deg)")
           .attr("fill", function (d) {
             return "#efefef"
           })
