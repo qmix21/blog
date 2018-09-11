@@ -159,7 +159,7 @@
 
 
                                                             userGroupData.forEach(function(element){
-                                                              console.log(element.name);
+                                                            //  console.log(element.name);
 
                                                               var data = {"2614":element.interactions,"techs":element.name};
 
