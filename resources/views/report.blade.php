@@ -133,18 +133,16 @@
                                                               userGroupData.push(element);
                                                             }
                                                             else {
-                                                              userGroupData.forEach(function(el)
-                                                            {
-                                                              if(el.name == element.name)
+                                                              for(i = 0; i<userData.length;i++)
                                                               {
-                                                                el.interactions = el.interactions + element.interactions;
-                                                                break;
+                                                                  if(userGroupData[i]==element.name)
+                                                                  {
+                                                                    console.log(userGroupData[i]);
+                                                                  }
+                                                                  else {
+                                                                    console.log("No Duplicates");
+                                                                  }
                                                               }
-                                                              else {
-                                                                userGroupData.push(element);
-                                                                break;
-                                                              }
-                                                            });
                                                             }
                                                           });
 
