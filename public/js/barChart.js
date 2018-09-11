@@ -86,7 +86,7 @@ function groupBarChart(config) {
       var element = g.append("g")
         .selectAll("g")
         .data(data)
-        console.log(data);
+        console.log(data)
         .enter().append("g")
         .attr("transform", function (d) {
           return "translate(" + x0(d[xAxis]) + ",0)";
