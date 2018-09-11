@@ -68,6 +68,13 @@
                                                         $js_arr = json_encode($arr);
                                                         echo $js_arr;?>;
 
+                                                        var users = <?php $userArr = [];
+                                                            foreach ($users as $user){
+                                                              array_push($userArr, $user);
+                                                            }
+                                                            $js_usr = json_encode($userArr);
+                                                            echo $js_usr;
+
                                                             var groupChartData = [];
                                                             dates.forEach(function(element) {
                                                                 var day = element.getDate();
@@ -78,7 +85,7 @@
 
                                                             });
 
-                                                            console.log(names);
+                                                            console.log(users);
 
                                                             names.forEach(function(element){
                                                               var data = {"2614":8,"techs":element};
