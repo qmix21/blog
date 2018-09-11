@@ -98,7 +98,8 @@
 
                                                                 users.forEach(function(element){
                                                                 //  console.log(element.name)
-                                                                  if(isNumeric(element.name)){
+                                                                var matches = users.name.match(/\d+/g);
+                                                                  if(matches!=null){
                                                                   //  console.log(element.name);
                                                                   }
                                                                   else {
@@ -159,6 +160,7 @@
 
                                                             userGroupData.forEach(function(element){
                                                               console.log(element.name);
+                                                              if
                                                               var data = {"2614":element.interactions,"techs":element.name};
 
                                                               groupChartData.push(data);
