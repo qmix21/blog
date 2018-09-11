@@ -112,11 +112,13 @@
                                                                     data = {'name':element.name,"interactions":element.perhour};
                                                                     userData.push(data);
 
+
                                                                     }
                                                                     else {
 
                                                                     //  console.log(complete_Date);
-                                                                    }
+                                                                  }
+                                                                    console.log(userData);
                                                                   }
 
                                                                 });
