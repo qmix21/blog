@@ -110,7 +110,7 @@
                                                                     {
                                                                       ele2.interactions = element.perhour + ele2.interactions;
                                                                     }
-                                                                    else {
+                                                                    else
                                                                       {
                                                                         data = {'name':element.name,"interactions":element.perhour};
                                                                         userData.push(data);
