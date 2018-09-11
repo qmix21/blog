@@ -153,7 +153,7 @@ function groupBarChart(config) {
         .append("text")
         .attr("x", width / 2)
         .attr("y", margin.bottom * 0.9)
-        .attr("y", "transform","rotate(90)")
+        .attr("transform","rotate(90)")
         .attr("dx", "0.32em")
         .attr("fill", "#000")
         .attr("font-weight", "bold")
