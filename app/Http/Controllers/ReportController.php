@@ -22,6 +22,6 @@ class ReportController extends Controller
             array_push($names,$name);
           }
         }
-        return view('report', compact($dates, 'dates'),compact($names,'names'),compact($users,'users'));
+        return view('report', compact($dates, 'dates'),compact($names,'names'),['users'=>$users]);
     }
 }

@@ -63,6 +63,7 @@
                                                             var names = <?php
                                                             $arr = [];
                                                             foreach ($names as $name) {
+                                          
                                                                 array_push($arr, $name->name);
                                                             }
                                                         $js_arr = json_encode($arr);
