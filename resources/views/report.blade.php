@@ -86,7 +86,7 @@
                                                                 var complete_Date = day + month + year;
 
                                                                 users.forEach(function(element){
-                                                                  console.log(element[0].name);
+                                                                  console.log(element.name);
 
                                                                 });
 
