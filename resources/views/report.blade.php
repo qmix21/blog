@@ -74,6 +74,7 @@
                                                             }
                                                             $js_usr = json_encode($userArr);
                                                             echo $js_usr;
+                                                            ?>
 
                                                             var groupChartData = [];
                                                             dates.forEach(function(element) {
