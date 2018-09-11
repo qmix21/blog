@@ -82,6 +82,7 @@
 
                                                             var groupChartData = [];
                                                             var userData = [];
+                                                            var userGroupData = [];
                                                             dates.forEach(function(element) {
 
 
@@ -107,7 +108,7 @@
                                                                     //Foreach
 
                                                                         data = {'name':element.name,"interactions":element.perhour};
-                                                                        console.log(data);
+                                                                        //console.log(data);
                                                                         userData.push(data);
 
                                                                     }
@@ -125,6 +126,13 @@
 
                                                             console.log(userData);
                                                           //  console.log(users);
+                                                          userData.forEach(function (element)
+                                                          {
+                                                            if(userGroupData.length == 0)
+                                                            {
+                                                              userGroupData.push(element);
+                                                            }
+                                                          });
 
                                                             names.forEach(function(element){
                                                               var data = {"2614":8,"techs":element};
