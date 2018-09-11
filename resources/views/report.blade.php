@@ -129,6 +129,7 @@
                                                                     else
                                                                       {
                                                                         userData.push(data);
+                                                                        console.log(data);
 
                                                                       }
 
