@@ -94,6 +94,7 @@
                                                                     console.log(element.name);
                                                                   }
                                                                   else {
+                                                                console.log(element.date);
                                                                     if(element.date == complete_Date)
                                                                     {
                                                                       console.log(element);
