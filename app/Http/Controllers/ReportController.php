@@ -23,6 +23,6 @@ class ReportController extends Controller
           }
         }
         #return $names;
-       return view('report',compact($users,'users'), compact($dates, 'dates'))->with('names',$names));
+       return view('report',compact($users,'users'), compact($dates, 'dates'))->with('names',$names);
     }
 }
