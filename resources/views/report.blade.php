@@ -82,8 +82,9 @@
 
                                                             var groupChartData = [];
                                                             var userData = [];
-                                                            var counter = 0;
+                                                              var counter = 0;
                                                             dates.forEach(function(element) {
+
 
                                                                 var day = element.getDate();
                                                                 var month = element.getMonth();
@@ -114,6 +115,7 @@
                                                                       else {
                                                                         userData.forEach(function(ele2)
                                                                         {
+                                                                          console.log(ele2.name);
                                                                             if(ele2.name == element.name)
                                                                             {
                                                                                 ele2.interactions = element.perhour + ele2.interactions;
