@@ -71,8 +71,8 @@
 
                                                         var users = <?php
                                                             $userArr = [];
-                                                            foreach ($techs as $tech){
-                                                              array_push($userArr, $tech);
+                                                            foreach ($users as $user){
+                                                              array_push($userArr, $user);
                                                             }
                                                             $js_usr = json_encode($userArr);
                                                             echo $js_usr;
