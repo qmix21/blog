@@ -23,6 +23,6 @@ class ReportController extends Controller
           }
         }
         #return $names;
-       return view('report', compact($dates, 'dates'),compact($names,'names'),array('users'=>$users));
+       return view('report',compact($users,'users'), compact($dates, 'dates'),compact($names,'names'));
     }
 }
