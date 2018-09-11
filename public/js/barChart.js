@@ -167,7 +167,7 @@ function groupBarChart(config) {
         .attr("x", 0)
         .attr("y", 6)//y(y.ticks().pop()) + 0.5)
         .attr("dy", "0.71em")
-        .attr("fill", "#000")
+        .attr("fill", "#888")
         .attr("transform", "rotate(-90)")
         .attr("font-weight", "bold")
         //.attr("text-anchor", "start")
