@@ -252,9 +252,7 @@ function groupBarChart(config) {
           .attr("y", function (d, i) {
             var dims = helpers.getDimensions(pie.cssPrefix + "tooltip" + d.index);
             return -(dims.h / 2) + 1;
-          })
-          .attr("transform","rotate(90deg)");
-
+          });
       },
 
       showTooltip: function (pie, index) {
@@ -281,7 +279,9 @@ function groupBarChart(config) {
             var x = mouseCoords[0] + 4 + 2;
             var y = mouseCoords[1] - (2 * 4) - 2;
             return "translate(" + x + "," + y + ")";
-          });
+          })
+          .attr("transform","rotate(90deg)");
+
       },
 
       hideTooltip: function (pie, index) {
