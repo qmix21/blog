@@ -106,7 +106,10 @@
                                                                     //  console.log(element);
                                                                     userData.forEach(function(ele2)
                                                                   {
-
+                                                                    if(ele2.name == element.name)
+                                                                    {
+                                                                      console.log(ele2);
+                                                                    }
 
                                                                   });
                                                                     data = {'name':element.name,"interactions":element.perhour};
@@ -118,7 +121,7 @@
 
                                                                     //  console.log(complete_Date);
                                                                   }
-                                                                    console.log(userData);
+                                                                  //  console.log(userData);
                                                                   }
 
                                                                 });
