@@ -104,24 +104,24 @@
                                                                     if(element.date == complete_Date)
                                                                     {
                                                                     //  console.log(element);
-                                                                    userData.forEach(function(ele2)
-                                                                    {
-                                                                    if(ele2.name == element.name)
-                                                                    {
-                                                                      ele2.interactions = element.perhour + ele2.interactions;
-                                                                    }
-                                                                    else
+
+
+
+                                                                    //Foreach
+                                                                      userData.forEach(function(ele2)
                                                                       {
-                                                                        data = {'name':element.name,"interactions":element.perhour};
-                                                                        userData.push(data);
-                                                                      }
+                                                                          if(ele2.name == element.name)
+                                                                          {
+                                                                              ele2.interactions = element.perhour + ele2.interactions;
+                                                                          }
+                                                                          else
+                                                                          {
+                                                                            data = {'name':element.name,"interactions":element.perhour};
+                                                                            userData.push(data);
+                                                                          }
+
                                                                     });
-
-                                                                  }});
-                                                                }
                                                                   console.log(userData);
-
-
                                                                     }
                                                                     else {
 
