@@ -30,7 +30,7 @@ function groupBarChart(config) {
         var cloloCode = z(d);
         $("#Legend_" + mainDivName).append("<span class='team-graph team1' style='display: inline-block; margin-right:10px;'>\
   			<span style='background:" + cloloCode + ";width: 10px;height: 10px;display: inline-block;vertical-align: middle;'>&nbsp;</span>\
-  			<span style='padding-top: 0;font-family:Source Sans Pro, sans-serif;font-size: 13px;display: inline;'>" + columnsInfo[d] + " </span>\
+  			<span style='padding-top: 0;font-family:Source Sans Pro, sans-serif;font-size: 53px;display: inline;'>" + columnsInfo[d] + " </span>\
   		</span>");
       });
 
