@@ -81,6 +81,7 @@
                                                             ?>
 
                                                             var groupChartData = [];
+                                                            var userData = [];
                                                             dates.forEach(function(element) {
                                                                 var day = element.getDate();
 
@@ -91,18 +92,26 @@
                                                                 }
                                                                 var year = element.getFullYear().toString().slice(-2);
                                                                 var complete_Date = day + '-' + month + '-'+ year;
-                                                                console.log(complete_Date);
+                                                              //  console.log(complete_Date);
 
                                                                 users.forEach(function(element){
                                                                 //  console.log(element.name)
                                                                   if(isNumeric(element.name)){
-                                                                    console.log(element.name);
+                                                                  //  console.log(element.name);
                                                                   }
                                                                   else {
-                                                                console.log(element.date);
+                                                                //console.log(element.date);
                                                                     if(element.date == complete_Date)
                                                                     {
-                                                                      console.log(element);
+                                                                    //  console.log(element);
+                                                                    userData.forEach(function(ele2)
+                                                                  {
+
+
+                                                                  });
+                                                                    data = {'name':element.name,"interactions":element.perhour};
+                                                                    userData.push(data);
+
                                                                     }
                                                                     else {
 
