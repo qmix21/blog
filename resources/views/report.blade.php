@@ -108,6 +108,7 @@
                                                                       if(counter==0)
                                                                       {
                                                                         data = {'name':element.name,"interactions":element.perhour};
+                                                                        console.log(data);
                                                                         userData.push(data);
                                                                       }
                                                                       else {
@@ -116,7 +117,7 @@
                                                                             if(ele2.name == element.name)
                                                                             {
                                                                                 ele2.interactions = element.perhour + ele2.interactions;
-                                                                                console.log(element.perhour);
+                                                                                //console.log(ele2.interact);
                                                                               }
                                                                               else
                                                                               {
@@ -139,7 +140,7 @@
                                                                 counter++;
                                                             });
 
-                                                            console.log(userData);
+                                                            //console.log(userData);
                                                           //  console.log(users);
 
                                                             names.forEach(function(element){
