@@ -85,19 +85,24 @@
                                                                 var year = element.getFullYear().toString().slice(-2);
                                                                 var complete_Date = day + month + year;
 
+                                                                users.forEach(function(element){
+                                                                  console.log(element);
+
+                                                                });
+
 
                                                             });
 
-                                                            console.log(users);
+                                                          //  console.log(users);
 
                                                             names.forEach(function(element){
                                                               var data = {"2614":8,"techs":element};
 
                                                               groupChartData.push(data);
-                                                              console.log(groupChartData);
+                                                            //  console.log(groupChartData);
 
                                                             });
-                                                            console.log(groupChartData);
+                                                            //console.log(groupChartData);
                                                           //  var groupChartData = [
                                                             //  {
                                                               //  "2614": 8,
