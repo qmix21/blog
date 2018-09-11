@@ -154,10 +154,10 @@
                                                                   }
 
                                                               }
-                                                              console.log(userGroupData);
+                                                              //console.log(userGroupData);
 
-                                                            names.forEach(function(element){
-                                                              var data = {"2614":8,"techs":element};
+                                                            userGroupData.forEach(function(element){
+                                                              var data = {"2614":element.interactions,"techs":element.name};
 
                                                               groupChartData.push(data);
                                                             //  console.log(groupChartData);
