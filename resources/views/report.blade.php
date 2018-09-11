@@ -124,13 +124,16 @@
 
                                                             });
 
-                                                            console.log(userData);
+                                                            /console.log(userData);
                                                           //  console.log(users);
                                                           userData.forEach(function (element)
                                                           {
                                                             if(userGroupData.length == 0)
                                                             {
-                                                              userGroupData.push(element);
+                                                              console.log(element);
+                                                            }
+                                                            else {
+                                                              console.log(1);
                                                             }
                                                           });
 
