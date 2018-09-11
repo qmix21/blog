@@ -146,6 +146,7 @@ function groupBarChart(config) {
       g.append("g")
         .attr("class", "axis")
         .attr("transform", "translate(0," + height + ")")
+        .attr("transform","rotate(90deg)")
         .call(d3.axisBottom(x0))
         .append("text")
         .attr("x", width / 2)
