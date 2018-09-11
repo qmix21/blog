@@ -82,9 +82,10 @@
 
                                                             var groupChartData = [];
                                                             var userData = [];
+                                                            var counter = 0;
                                                             dates.forEach(function(element) {
-                                                                var day = element.getDate();
 
+                                                                var day = element.getDate();
                                                                 var month = element.getMonth();
                                                                 if(month != 10 || month != 11 || month != 12)
                                                                 {
@@ -104,10 +105,12 @@
                                                                     if(element.date == complete_Date)
                                                                     {
                                                                     //Foreach
-                                                                    data = {'name':element.name,"interactions":element.perhour};
-                                                                    console.log(data);
-                                                                    if(userData)
+                                                                    if(counter==0)
                                                                     {
+                                                                      data = {'name':element.name,"interactions":element.perhour};
+                                                                      userData.push(data);
+                                                                    }
+                                                                    else {
                                                                       userData.forEach(function(ele2)
                                                                       {
                                                                           if(ele2.name == element.name)
@@ -117,18 +120,19 @@
                                                                           }
                                                                           else
                                                                           {
+                                                                            data = {'name':element.name,"interactions":element.perhour};
                                                                             userData.push(data);
-
                                                                           }
 
-                                                                    });
+                                                                      });
                                                                     }
-                                                                    else
-                                                                      {
-                                                                        userData.push(data);
-                                                                        console.log(data);
 
-                                                                      }
+
+                                                                    //console.log(data);
+
+
+
+                                                                  }
 
 
 
@@ -143,10 +147,10 @@
 
                                                                 });
 
-
+                                                                counter++;
                                                             });
 
-                                                            console.log(userData);
+                                                          //  console.log(userData);
                                                           //  console.log(users);
 
                                                             names.forEach(function(element){
