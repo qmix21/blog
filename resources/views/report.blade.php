@@ -86,6 +86,7 @@
                                                                 var month = element.getMonth();
                                                                 var year = element.getFullYear().toString().slice(-2);
                                                                 var complete_Date = day + month + year;
+                                                                console.log(day);
 
                                                                 users.forEach(function(element){
                                                                 //  console.log(element.name)
@@ -99,7 +100,7 @@
                                                                     }
                                                                     else {
 
-                                                                      console.log(complete_Date);
+                                                                    //  console.log(complete_Date);
                                                                     }
                                                                   }
 
